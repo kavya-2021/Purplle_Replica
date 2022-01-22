@@ -14,6 +14,7 @@ let nav = () =>
             <!-- <img id="details-enlarged-image" class="js-search-result-thumbnail custom-height container--focus" src="https://as2.ftcdn.net/v2/jpg/01/25/83/03/1000_F_125830316_m9Grtzjlt2I5Gp4qpDQq5G5BSXR5d9ZF.jpg" alt="Heart outline icon vector isolated" itemprop="thumbnail" data-content-id="125830316"> -->
             <a href="https://purplle--clone.herokuapp.com/wishlist"><i class="far fa-heart"></i></a>
             <a href="https://purplle--clone.herokuapp.com/users/login"><i class="far fa-smile"></i></a>
+            <a href="https://purplle--clone.herokuapp.com/users/logout" class="btn btn-secondary"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
             <a href="https://purplle--clone.herokuapp.com/cart"><i class="fas fa-shopping-bag"></i></a>
             <!-- <img src="https://cdn0.iconfinder.com/data/icons/buntu-internet/100/shopping_cart_glyph_convert-512.png" alt=""> -->
         </div>
