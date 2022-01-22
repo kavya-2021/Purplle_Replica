@@ -11,7 +11,7 @@ app.use(express.json());
 
 const connect = require('./configs/db')
 
-app.listen( process.env.port || 4908 ,async()=>{
+app.listen( process.env.PORT || 4908 ,async()=>{
     await connect();
     console.log("Listening to port 4905");
 })
