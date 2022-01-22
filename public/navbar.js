@@ -29,11 +29,11 @@ let nav = () =>
                             <div id = "Makeup">
                                 <div>
                                     <ul>
-                                        <li class="bb1"><a href="/faceproducts">MakeUP</a></li>
-                                        <li> <a href="/faceproducts"> Primer</a></li>
-                                        <li> <a href="/faceproducts">COncealer</a></li>
-                                        <li> <a href="/faceproducts">BB & CC Cream</a></li>
-                                        <li> <a href="/faceproducts">Foundation</a></li>
+                                        <li class="bb1"><a href="https://purplle--clone.herokuapp.com/faceproducts">MakeUP</a></li>
+                                        <li> <a href="https://purplle--clone.herokuapp.com/faceproducts"> Primer</a></li>
+                                        <li> <a href="https://purplle--clone.herokuapp.com/faceproducts">COncealer</a></li>
+                                        <li> <a href="https://purplle--clone.herokuapp.com/faceproducts">BB & CC Cream</a></li>
+                                        <li> <a href="https://purplle--clone.herokuapp.com/faceproducts">Foundation</a></li>
                                         <li> <a href="">Compect</a> </li>
                                         <li> <a href="">Loos Powder</a> </li>
                                         <li> <a href="">Blush</a> </li>
@@ -45,15 +45,15 @@ let nav = () =>
                                 </div>
                                 <div>
                                     <ul>
-                                        <li class="bb1"> <a href="https://purplle--clone.herokuapp.com/faceproducts">LIP MAKEUP</a></li>
-                                        <li> <a href="/faceproducts">Lipistick</a></li>
-                                        <li> <a href="/faceproducts">Liquid Lipistick</a></li>
-                                        <li> <a href="/faceproducts">Lip Crayon</a> </li>
-                                        <li> <a href="/faceproducts">Lip Liner</a></li>
+                                        <li class="bb1"> <a href="https://purplle--clone.herokuapp.comhttps://purplle--clone.herokuapp.com/faceproducts">LIP MAKEUP</a></li>
+                                        <li> <a href="https://purplle--clone.herokuapp.com/faceproducts">Lipistick</a></li>
+                                        <li> <a href="https://purplle--clone.herokuapp.com/faceproducts">Liquid Lipistick</a></li>
+                                        <li> <a href="https://purplle--clone.herokuapp.com/faceproducts">Lip Crayon</a> </li>
+                                        <li> <a href="https://purplle--clone.herokuapp.com/faceproducts">Lip Liner</a></li>
                                         <li> <a href="">Gloss</a> </li>
                                         <br>
                                         <br>
-                                         <li class="bb1"><a href="/faceproducts">NAILS</a></li>
+                                         <li class="bb1"><a href="https://purplle--clone.herokuapp.com/faceproducts">NAILS</a></li>
                                          <li><a href="">nail Polish</a></li>
                                          <li><a href="">Gel Nail Polish</a></li>
                                          <li><a href="">Matte Nail Polish</a></li>
