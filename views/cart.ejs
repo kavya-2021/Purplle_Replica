@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <link rel="stylesheet" href="css/navbar.css">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <link rel="icon" href="https://media6.ppl-media.com/mediafiles/ecomm/misc/purplle-16x16.png">
+    <title>Cart Page </title>
+    <style>
+        #mainDiv2{
+            display: grid;
+            grid-template-columns: 60% 30%;
+            justify-content: center;
+            column-gap: 15px;          
+            height: 400px;
+        }
+       
+        #secureBox{
+            display: grid;
+            grid-template-columns: 30% 70%;
+            margin: 0px 40px 0px 40px;
+        }
+
+        #thatDiv{
+            z-index: 99;
+        }
+        #secureBox >div >img{
+            width: 40px;
+            padding: 20px 0px 0px 30px;
+        }
+        #secureBox >div > h3{
+             transform: translate(-0%,20%);
+        }
+        #secureBox >div > p{
+             transform: translate(-0%,-70%);
+        }
+        #pinCode{
+            display: flex;
+            margin: 10px 40px 0px 40px ;
+        }
+        #pinCode >input{
+            border: oldlace;
+            
+        }
+        #pinCode >p{
+            cursor: pointer;
+            color: #e40980;
+        }
+        #priceDetails{
+            padding: 0px 40px 0px 40px;
+        }
+        #priceDetails span{
+                float: right;
+        }
+        #priceDetails button{
+            width: 100%;
+            height: 50px;
+            margin-bottom: 50px;
+            border: none;
+            background-color: #e40980;
+             
+            font-size: large;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* left Div Star From Here  */
+
+        #MyCart{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .shopmore{
+            font-size: large;
+            color: #e40980;
+            padding-right: 10px;
+        }
+        .shopmore span{
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        #products{
+            display: grid;
+            grid-template-columns: 12% 67% 20%;
+             margin-top: 20px;
+        }
+
+        #products >div >img{
+            margin-top: 40px;
+            padding-left: 15px;
+            width: 50px;
+            height: 50px;
+        }
+         
+        #products >div >p >span{
+            float:right
+        }
+        .price{
+            text-align: end;
+        }
+        #QtyDiv >select{
+            border: none;
+        }
+        #QtyDiv{
+            display: flex;            
+        }
+
+
+        #divButton{
+            display: flex;
+             
+        }
+        #divButton > button{
+            border: none;
+            cursor: pointer;
+
+        }
+        .dash{
+           margin: 10px 20px ;
+        }
+    </style>
+</head>
+<body onload ="setD(`<%= JSON.stringify(cart)%>`)">
+    <div id="thatDiv"></div>
+
+    <div id="mainDiv2">
+        <div id="leftDiv">
+
+            <div id="MyCart">
+                <h4>My Cart <span>(Number)</span></h3>
+                
+                <a href="home.html"><p class="shopmore">Shop More <i class="fas fa-angle-right"></i></p></a> 
+            </div>
+
+            <div id="cartItem">
+
+            </div>
+        </div>
+        <div id="rightDiv">
+            <div id="secureBox">
+                <div>
+                    <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1515664301_shield.png" alt="">
+                </div>
+               <div>
+                   <h3>1 0 0 % Safe Payments</h3>
+                   <p>Genuine Products | Easy Returns</p>
+               </div>
+
+            </div>
+
+            <div id="pinCode">
+                <input type="text" placeholder="Enter Pincode">
+                <p>CHECK DELIVERY</p>
+            </div>
+
+            <div id="priceDetails">
+                <h4>Price Details</h4>
+                <p>Total MRP: <span id="TotalMrp">RS Null</span></p>
+                <p>Saving MRP: <span id="savingmrp">RS Null</span></p>
+                <p>Subtotal: <span id="subtotal">RS Null</span></p>
+                <p>Shipping charges: <span id="shipping">RS Null</span></p>
+                <p>Coupon Discount: <span id="coupon">Applied</span></p>
+                <hr>
+                <h3>Order total: <span id="ordertotal">Rs Null</span></h3>
+                <p>You Save: <span id="yousave">RS Null</span></p>
+                <button id="bu"  >PLACE ORDER</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+ 
+<script>
+ let data = [];
+  function setD(cart){
+        let prod = JSON.parse(cart);
+        CartShow(prod)
+        data = prod;      
+    }
+    
+    var TotalMrp = document.getElementById("TotalMrp");
+    var savingmrp = document.getElementById("savingmrp");
+    var subtotal = document.getElementById("subtotal");
+    var shipping = document.getElementById("shipping");
+    var coupon = document.getElementById("coupon");
+    var ordertotal = document.getElementById("ordertotal");
+    var yousave = document.getElementById("yousave");
+    
+     var total = 0;
+     var distotal =0 ;
+     var arr =[];
+
+     function CartShow(data){   
+        data.map(function(item,index){
+   
+                var div = document.createElement("div");
+                div.setAttribute("id","products");
+
+                var  divimage = document.createElement("div");
+                var img  = document.createElement("img");
+                img.setAttribute("src",item.image_url[0]);
+                divimage.append(img)
+
+                var divDetails = document.createElement("div");
+
+                var titleName = document.createElement("p");
+                titleName.innerHTML = `${item.title}`
+                divDetails.append(titleName)
+                //Qty Small div
+                var QytDiv = document.createElement("div");
+
+                var Qty  = document.createElement("p");
+                QytDiv.setAttribute("id","QtyDiv");
+                
+                var selectQty = document.createElement("select");
+                selectQty.setAttribute("id","Quantity")
+               
+                selectQty.innerHTML = `<option>1</option><option>2</option><option>3</option><option>4</option>`
+
+                var divButton = document.createElement("div");
+                divButton.setAttribute("id","divButton")
+                var b1 = document.createElement("button");
+                b1.innerHTML="Remove";
+                b1.onclick = ()=>{
+                    removefromCart(item,index);
+                }
+
+
+                var dash = document.createElement("p");
+                dash.setAttribute("class","dash")
+                dash.innerHTML=`|`
+                var b2 = document.createElement("button")
+                b2.innerHTML= "Move To WishList";
+                b2.onclick = () => {
+                    sendToWishList(item);
+                }
+                divButton.append(b1,dash,b2)
+                
+                QytDiv.append(Qty,selectQty)
+                divDetails.append(QytDiv,divButton)
+
+                var divPriceAndDiscount = document.createElement("div");
+                divPriceAndDiscount.setAttribute("class","price");
+                var price1 = document.createElement("p");
+                price1.innerHTML = `Rs ${Math.round(item.price-(item.price*item.discount))}`
+                var discountPrice = document.createElement("p");
+                discountPrice.setAttribute("id","discountPrice")
+                discountPrice.innerHTML  = ` <S>Rs ${item.price}</s> ${item.discount*100}%  `
+
+                divPriceAndDiscount.append(price1,discountPrice)
+                //calculation
+                total = total+item.price;
+                let dicoP = Math.round(item.price* (1-item.discount))
+               
+                distotal  = distotal+dicoP;
+                 console.log(total,distotal)
+               
+                 var sv = total-distotal;
+                // console.log(Math.round(dis))
+                 TotalMrp.innerHTML = total
+                 savingmrp.innerHTML = sv;
+                 subtotal.innerHTML = total-sv;
+                 shipping.innerHTML = "Rs 50"
+                 ordertotal.innerHTML = total-sv+50;
+                 yousave.innerHTML = sv;
+
+                 arr = [total,sv,total-sv,total-sv+50,sv];
+                 localStorage.setItem("arr",JSON.stringify(arr));
+                 console.log(arr)
+
+                selectQty.onchange = function (){
+                    changingqty(item,index,price1,discountPrice,total,distotal,savingmrp)
+                }
+
+                function changingqty(item,index,price1,discountPrice){
+    
+                        let qty = document.getElementById("Quantity").value;
+    
+                        let dip = Math.round((item.price)* (1-item.discount))
+    
+                        price1.innerHTML = `Rs ${(dip)*qty}`;
+                        let v = item.price*(qty-1);
+                        //discountPrice.innerHTML  = ` <S>Rs ${(item.price)*qty}</s> ${item.discount*100}%  `
+                        // let dip2 = (item.price)*qty;
+                        let disco1 = Math.round((item.price*item.discount)*(qty-1));
+                        let dicco2 =Math.round((item.price*(1-item.discount))*(qty-1));
+                        console.log(disco1);
+                        console.log(v);
+                        distotal = distotal+dicco2;
+                        TotalMrp.innerHTML = total+v;
+                        savingmrp.innerHTML = Math.round(total+v-distotal);
+                        subtotal.innerHTML = total+v-(Math.round(total+v-distotal));
+                        ordertotal.innerHTML =total+v-(Math.round(total+v-distotal))+50;
+                        yousave.innerHTML = Math.round(total+v-distotal);
+                        coupon.innerHTML = "Applied"
+                        console.log(total,distotal)
+                        let x = total+v;
+                        let y = Math.round(total+v-distotal);
+                        let z =  total+v-(Math.round(total+v-distotal));
+                        let xx = total+v-(Math.round(total+v-distotal))+50;
+                        let xy = Math.round(total+v-distotal);
+                        arr = [x,y,z,xx,xy]
+                        localStorage.setItem("arr",JSON.stringify(arr));
+                        console.log(arr)
+
+   
+                    }
+
+                div.append(divimage,divDetails,divPriceAndDiscount)
+                cartItem.append(div)
+   
+        });
+    }  
+
+         document.getElementById("bu").addEventListener("click",function(){
+             
+            window.location.href="address.html"
+         });
+
+    function removefromCart(item,index){
+        let remCart = item;
+
+        window.post = function(url) {
+            return fetch(url, {method: "DELETE", headers: {'Content-Type': 'application/json'}});
+         }
+       post(`/cart/${remCart._id}`);
+       window.location.reload();
+    }
+           
+    function  sendToWishList(item){
+        let wishItem = item
+        window.post = function(url, data) {
+        return fetch(url, {method: "POST", headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)});
+        }
+    post("/wishlist", wishItem);
+    }
+   
+</script>
+
+<script type="module">
+    // Importing the nav
+    import nav from '/navbar.js';
+    var div = document.getElementById("thatDiv");
+    div.innerHTML = nav();
+</script>

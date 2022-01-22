@@ -1,0 +1,596 @@
+
+.BorderLineSearch {
+   
+    width: 70%;
+    border-bottom: 3px solid #e40980;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 25px 50px;
+    transition: all 0.5s ease 0s;
+ }
+ 
+ .BorderLineSearch button,
+ .BorderLineSearch input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  outline: 0;
+ }
+ #Sbutton
+ {
+    cursor: pointer;
+ }
+ #Sbutton > img
+ {
+    width: 20px;
+    height: 20px;
+ }
+ 
+ /* this serach  */
+ 
+         #catsub>ul>li>div>div>ul>li
+         {
+                 font-size: 15px;
+         }
+         *
+         {
+             list-style: none;
+         }
+         a
+         {
+             color: black;
+             text-decoration: none;
+         }
+         a:hover
+         {
+             color: #e40980;
+         }
+ 
+        #logo
+        {
+            background-color: white;
+            height: 70px;
+            display: grid;
+            grid-template-columns: repeat(3,33%);
+            justify-content: space-between;
+        }
+        #logoin
+        {
+            padding-left: 200px;
+            height: 70px;
+        }
+        #rdPart
+         {
+              padding-left: 100px;
+              font-size: 35px;
+              margin-left: 80px;
+              font-weight: 100;
+             
+         }
+        #rdPart>a>i
+        {
+            margin-top: 25px;
+            color: #88898a;
+            margin-left: 20px;
+            width: 50px;
+            height: 50px;
+        }
+        #cat{
+             
+             background-color: white;
+             transform: translate(-0%,-40%);
+              -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.48);
+             -moz-box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.48);
+             box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.48);
+             height: 50px;
+            
+            
+           
+            
+             
+        }
+        #cat>ul>li:hover
+        {
+            color:  #e40980;
+        }
+        #cat>ul
+        {
+            list-style: none;
+             display: flex;
+              font-size: 20px;
+            justify-content: center;
+             height: 0px;
+            transition-timing-function: ease-in;
+            
+            background-color: turquoise;
+             
+            
+        }
+        #cat ul li
+        {
+          
+             padding: 15px;
+        }
+         #catsub>ul
+         {
+              display: flex;
+              list-style: none;
+             background-color: white;
+              position: absolute;
+              margin-top: 4px;
+              padding: 15px;
+              
+              transform: translate(-10%,-10%);
+
+               
+              
+         }
+         
+ 
+          #catsub >ul>li
+         {
+             padding:   10px ;
+         } 
+         #A,#B,#C
+         {
+             display: grid;
+             grid-template-columns: 20% 20% 20% 20%;
+             justify-content: center;
+             row-gap: 20px;
+             width: auto;
+             column-gap: 20px;
+         }
+         #A>img, #C>img, #B>img
+         {
+             border: 1px solid gray ;
+         }
+         #maindiv
+         {
+             display: grid;
+             grid-template-columns: 100%;
+             
+              margin: auto;
+              
+              position: absolute;
+             height: 500px;
+             
+             
+             width: 700px;
+             transform: translate(-25%,0%);
+         }
+         
+        #maindiv >ul
+        {
+            display: flex;
+            justify-content: center;
+             position: absolute;
+             height: 100%;
+             width: 94%;
+             background-color: white;
+             
+             
+             
+            
+ 
+            
+        }
+        
+        
+        #A
+        {
+            display: grid;
+            position: absolute;
+         transform: translate(-10%,15%) ;
+        }
+        #B
+        {
+         display: none;
+            position: absolute;
+         transform: translate(-41%,15%) ;
+        }
+        #C
+        {
+         display: none;
+            position: absolute;
+         transform: translate(-65%,15%) ;
+        }
+        #maindiv>ul>li:first-child:hover div
+        {
+            display: grid;
+        }
+        #maindiv>ul>li:nth-child(2):hover div
+        {
+            display: grid;
+        }
+        
+        #maindiv>ul>li:last-child:hover div
+        {
+            display: grid;
+        }
+         #catsub {
+ 
+               display:none;
+ 
+         }
+         #maindiv
+         {
+             display: none;
+         }
+ 
+         
+         #cat>ul>li:first-child:hover>div  
+         {
+             display: block;
+             cursor: pointer;
+             
+         }
+         #cat>ul>li:nth-child(2):hover>div  
+         {
+             display: block;
+             cursor: pointer;
+             
+         }
+        
+         #Makeup 
+         {
+             display: grid;
+             grid-template-columns: 20% 20% 20% 20%;
+             gap: 20px;
+             column-gap: 10px;
+             position: absolute;
+             justify-content: center;
+             width: auto;
+             margin-top: 40px;
+             height: 420px; 
+             width: 1200px;
+             overflow: scroll;
+             transform: translate(-18%,-9%);
+             background-color: white;
+             
+ 
+         }
+         #Skincare
+         {
+             display: grid;
+             grid-template-columns: 20% 20% 20% 20%;
+             gap: 20px;
+             column-gap: 10px;
+             position: absolute;
+             justify-content: center;
+             width: auto;
+             margin-top: 40px;
+             height: 400px; 
+             width: 1200px;
+             overflow: scroll;
+             
+             background-color: white;
+             
+ 
+         }
+         #Haircare
+         {
+             display: grid;
+             grid-template-columns: 20% 20% 20% 20%;
+             gap: 20px;
+             
+             position: absolute;
+             justify-content: center;
+             background-color: rgb(255, 255, 255);
+             margin-top: 20px;
+             height: 420px; 
+             overflow: scroll;
+             width: 1200px;
+             transform: translate(-34.54%,-2.54%);
+         }
+         #PersonalCare
+         {
+             display: grid;
+             grid-template-columns: 20% 20% 20% 20%;
+             gap: 20px;
+             
+             position: absolute;
+             justify-content: center;
+             background-color: rgb(255, 255, 255);
+             margin-top: 20px;
+             height: 420px; 
+             overflow: scroll;
+             width: 1200px;
+             transform: translate(-42.64%,-4%);
+         }
+         #Men
+         {
+             display: grid;
+             grid-template-columns: 20% 20% 20% 20%;
+             gap: 20px;
+             
+             position: absolute;
+             justify-content: center;
+             background-color: rgb(255, 255, 255);
+             margin-top: 20px;
+             height: 420px; 
+             overflow: scroll;
+             width: 1200px;
+             transform: translate(-53.64%,-4%);
+         }
+         #Frag
+         {
+             display: grid;
+             grid-template-columns: 20% 20% 20% 20%;
+             gap: 20px;
+             
+             position: absolute;
+             justify-content: center;
+             background-color: rgb(255, 255, 255);
+             margin-top: 20px;
+             height: 420px; 
+             overflow: scroll;
+             width: 1200px;
+             transform: translate(-58.64%,-4%);
+         }
+         #HW
+         {
+             display: grid;
+             grid-template-columns: 20% 20% 20% 20%;
+             gap: 20px;
+             
+             position: absolute;
+             justify-content: center;
+             background-color: rgb(255, 255, 255);
+             margin-top: 20px;
+             height: 420px; 
+             overflow: scroll;
+             width: 1200px;
+             transform: translate(-66.64%,-4%);
+         }
+         #MomAndBaby
+         {
+             display: grid;
+             grid-template-columns: 20% 20% 20% 20%;
+             gap: 20px;
+             
+             position: absolute;
+             justify-content: center;
+             background-color: rgb(255, 255, 255);
+             margin-top: 20px;
+             height: 420px; 
+             overflow: scroll;
+             width: 1200px;
+             transform: translate(-81.64%,-4%);
+         }
+         #MomAndBaby>div>ul
+         {
+             padding-top: 20px;
+         }
+         #MomAndBaby>div>ul>li
+         {
+             padding: 5px;
+         }
+         #HW>div>ul
+         {
+             padding-top: 20px;
+         }
+         #HW>div>ul>li
+         {
+             padding: 5px;
+         }
+         #Frag>div>ul
+         {
+             padding-top: 20px;
+         }
+         #Frag>div>ul>li
+         {
+             padding: 5px;
+         }
+         #Men>div>ul
+         {
+             padding-top: 20px;
+         }
+         #Men>div>ul>li
+         {
+             padding: 5px;
+         }
+         
+         #PersonalCare>div>ul
+         {
+             padding-top: 20px;
+         }
+         #PersonalCare>div>ul>li
+         {
+             padding: 5px;
+         }
+         
+         #Haircare >div>ul
+         {
+             padding-top: 20px;
+         }
+         #Haircare >div>ul>li
+         {
+             padding: 5px;
+         }
+         #MomAndBaby>div
+         {
+             background-color: rgb(250, 249, 249);
+         }
+         #Skincare 
+         {
+ 
+             height: 420px;
+             transform: translate(-25.5%,-9%);
+         }
+ 
+        
+         *::-webkit-scrollbar {
+                     display: none;
+         }
+         #HW>div
+         {
+             background-color: rgb(250, 249, 249);
+         }
+         
+         #Frag >div
+         {
+             background-color: rgb(250, 249, 249);
+         }
+         #Men >  div
+         {
+             
+            background-color: rgb(250, 249, 249);
+             
+             
+         }
+         #PersonalCare > div
+         {
+             
+            background-color: rgb(250, 249, 249);
+             
+             
+         }
+         #Makeup > div
+         {
+             
+            background-color: rgb(250, 249, 249);
+             
+             
+         }
+         #Skincare > div
+         {
+             
+            background-color: rgb(250, 249, 249);
+             
+             
+         }
+         #Haircare > div
+         {
+             
+            background-color: rgb(250, 249, 249);
+             
+             
+         }
+         #Makeup> div >ul
+         {
+             
+             padding-top: 20px;
+         }
+          
+         #Skincare >div >ul
+         {
+             padding-top: 20px;
+         }
+         #Makeup > div >ul >li
+         {
+             
+             padding: 5px;
+         }
+         #Skincare > div >ul >li
+         {
+             
+             padding: 5px;
+         }
+          
+         #Makeup 
+         {
+             display: none;
+         }
+         #Skincare
+         {
+              
+             display: none;
+         }
+ 
+         #Haircare
+         
+         {
+             display: none;
+         }
+         #PersonalCare
+         {
+             display: none;
+         }
+         #Men {
+             display: none;
+         }
+         #Frag
+         {
+             display: none;
+         }
+         #HW
+         {
+             display: none;
+         }
+         #MomAndBaby
+         {
+             display: none;
+         }
+         #catsub>ul>li:first-child:hover>div  
+         {
+             
+             display: grid;
+             cursor: pointer;
+             
+         }
+         #catsub>ul>li:nth-child(2):hover>div  
+         {
+             
+             display: grid;
+             cursor: pointer;
+             
+         }
+         #catsub>ul>li:nth-child(3):hover>div  
+         {
+             
+             display: grid;
+             cursor: pointer;
+             
+         }
+         #catsub>ul>li:nth-child(4):hover>div  
+         {
+             
+             display: grid;
+             cursor: pointer;
+             
+         }
+         #catsub>ul>li:nth-child(5):hover>div  
+         {
+             
+             display: grid;
+             cursor: pointer;
+             
+         }
+         #catsub>ul>li:nth-child(6):hover>div  
+         {
+             
+             display: grid;
+             cursor: pointer;
+             
+         }
+         #catsub>ul>li:nth-child(7):hover>div  
+         {
+             
+             display: grid;
+             cursor: pointer;
+             
+         }
+         #catsub>ul>li:nth-child(8):hover>div  
+         {
+             
+             display: grid;
+             cursor: pointer;
+             
+         }
+        
+         /* bolding the first element in list */
+         .bb1
+         {
+             font-weight: bolder;
+         }
+  
+         #thatDiv{
+             position: sticky;
+             top : 0;
+             z-index: 99;
+         }
+         

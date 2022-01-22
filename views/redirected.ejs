@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body onload ="setD(`<%= JSON.stringify(required)%>`)">
+       
+    </body>
+</html>
+<script>
+    function setD(required){
+        console.log(JSON.parse(required));
+    }
+</script>
+
+<script type="module">
+    import nav from '/navbar.js';
+
+    console.log(nav)
+    var div = document.getElementById("thatDiv");
+
+    div.innerHTML = nav();
+
+</script> 

@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <title>Product Description</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+
+    <link rel="icon" href="https://media6.ppl-media.com/mediafiles/ecomm/misc/purplle-16x16.png">
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/productDescription.css">
+    </head>
+    <body onload ="setD('<%= JSON.stringify(required)%>',`<%= JSON.stringify(allProducts)%>`)" >
+   
+        <div id="thatDiv">
+
+        </div>
+        <div id="product">
+          <div id="product_images">
+            <div id="small_images">
+            
+            </div>
+    
+            <div id="large_image">
+              <img id="large_image_src" src="" alt="" />
+            </div>
+          </div>
+    
+          <div id="product_description">
+            <div id="description_rating">
+              <p id="description"></p>
+              <div id="rating"></div>
+            </div>
+    
+            <div id="price_primer">
+              <div id="price"></div>
+              <div id="primer">
+                <div id="badge">
+                  <div>#Best Seller</div>
+                  <div>
+                    <span
+                      id="triangle"
+                      class="iconify"
+                      data-icon="bx:bxs-left-arrow"
+                      style="color: white"
+                      data-width="20"
+                      data-height="20"
+                    ></span>
+                  </div>
+                </div>
+                <div>
+                  In <span style="color: rgb(228, 39, 102)">Primer See Top 25</span>
+                </div>
+              </div>
+            </div>
+    
+            <div id="offers">
+              Available Offers (1)
+              <div>
+                <span
+                  id="discount_img"
+                  class="iconify"
+                  data-icon="tabler:discount-2"
+                  style="color: pink"
+                  data-width="40"
+                  data-height="40"
+                ></span>
+                <p id="discount_desc">
+                  Choose Your FREE Gift worth Rs.199 on cart orders above Rs.199
+                  across NY Bae. Offer is not valid on select products.T&C
+                </p>
+              </div>
+            </div>
+    
+            <div id="explore">
+              <p>Explore:</p> 
+             <ul>
+               <li>Tinted Primer - Yellow</li>
+               <li>Face Primer</li>
+               <li>Brightenin Face Primer</li>
+               <li>Brightenin face Primer</li>
+             </ul>
+            </div>
+          </div>
+        </div>
+    
+    
+    
+        <!-- Details, Description, Specification -->
+    
+    
+      <div id="details_reviews_cart">
+        <div id="details_reviews">
+          
+            <div id="ideal_for">
+              <p class="bold_text">IDEAL FOR</p>
+              <div id="ideal_for_img">
+                <div>
+                  <img src="https://media6.ppl-media.com/static/img/cache/default/F.png" alt="Fine Lines And Pores">
+                  <p>Fine Lines And Pores</p>
+                </div>
+                <div>
+                  <img src="https://media6.ppl-media.com/static/img/cache/default/A.png" >
+                  <p>All Skin Types</p>
+                </div>
+              </div>
+              
+            </div>
+    
+            <div id="benefits">
+              <p class="bold_text">BENEFITS</p>
+              <div id="benefits_img">
+                 <div>
+                  <img src="https://media6.ppl-media.com/static/img/cache/default/E.png" alt="Even Skin Tone">
+                  <p>Even Skin Tone</p>
+                 </div>
+                 <div>
+                  <img src="https://media6.ppl-media.com/static/img/cache/default/B.png" alt="Blurs Out Pores &amp; Fine Lines">
+                  <p>Blurs Out Pores & Fine Lines</p>
+                 </div>
+                 <div>
+                  <img  src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1492791383_hydrating.png"  alt="Hydrating">
+                  <p>Hydrating</p>
+                 </div>
+                 <div>
+                  <img  src="https://media6.ppl-media.com/static/img/cache/default/E.png"  alt="Enriched With Vitamin E">
+                  <p>Enriched With Vitamin E</p>
+                 </div>
+                 <div>
+                  <img src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1492791391_light-weight.png"  alt="Light Weight">
+                  <p>Light Weight</p>
+                 </div>
+              </div>
+            </div>
+            <div id="full_description">
+              <p class="bold_text">Description</p>
+              <p id="get_description"></p>
+              <p id="best_before"></p>
+            </div>
+            <div id="specification">
+              <p class="bold_text">Specification</p>
+              <div id="specification_content">
+                    <div>
+                      <p>Skin Concern</p>
+                      <p id="skin_concern"></p>
+                    </div>
+                    <div>
+                      <p>Skin Type</p>
+                      <p id="skin_type"></p>
+                    </div>
+                    <div>
+                      <p>Speciality</p>
+                      <p id="speciality"></p>
+                    </div>
+                  
+                    <div>
+                      <p>Benefits</p>
+                      <p id="benefits_specs"></p>
+                    </div>
+                    <div>
+                      <p>Product Type</p>
+                      <p id="product_type"></p>
+                    </div>
+                    <div>
+                      <p>Country Of Origin</p>
+                      <p id="origin"></p>
+                    </div>
+                   
+                </div>
+              </div>
+        </div>
+    
+    
+    
+    
+        <div id="cart_delivery">
+            <div id="addtocart_save">
+                 <button id="addtocart">ADD TO CART</button>
+                 <button id="save" style="display: flex; justify-content: center; "><span class="iconify" data-icon="el:heart-empty"  data-width="20" data-height="20" ></span>SAVE</button>
+            </div>
+            <div id="delivery_to">
+              <label for="">Delivery To:</label>
+              <div>
+                <span class="iconify" data-icon="carbon:location-filled" data-width="20" data-height="20"></span>
+                <input type="text" placeholder="Enter Pincode">
+                <label for="" style="color: mediumvioletred;">Check Delivery</label>
+              </div>
+              
+            </div>
+            <div id="delivery_details">
+               <ul>
+                 <li>100% Genuine products</li>
+                 <li>15 Days easy returns</li>
+                 <li>Qualifies for free delivery</li>
+                 <li>Qualifies for free COD</li>
+               </ul>
+            </div>
+            
+        </div>
+    
+      </div>
+    
+    
+    
+    
+    
+    <!-- Product Suggestion -->
+    
+    <!-- Slider Portion -->
+    
+        <div id="also_viewed">
+          <h2>ALSO VIEWED</h2>
+          <div >
+              <span class="viewed_span">&#139</span>
+              <span class="viewed_span">&#155</span>
+             <section id="also_viewed_slider">
+           
+             </section>
+          </div>
+        </div>
+    
+        <div id="featured">
+          <h2>FEATURED</h2>
+          <div >
+            <span class="featured_span">&#139</span>
+            <span class="featured_span">&#155</span>
+           <section id="featured_slider">
+         
+           </section>
+        </div>
+        </div>
+    
+      
+        <div id="todays_deals">
+          <h2>TODAY'S DEALS</h2>
+          <div >
+            <span class="todays_deals_span">&#139</span>
+            <span class="todays_deals_span">&#155</span>
+           <section id="todays_deals_slider">
+         
+           </section>
+        </div>
+        </div>
+    
+       
+        <div id="secure_assist_help">
+          <div id="secure">
+            <img
+              _ngcontent-htd-c2=""
+              alt="secure payments"
+              class="w100p mr0auto mx-w120 db pdt25 pdb25 visible"
+              src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247950_secure-payment.jpg"
+            />
+            <h2>100% Secure Payment</h2>
+            <p>All major credit &amp; debit cards accepted.</p>
+          </div>
+    
+          <div id="assist">
+            <img
+              alt="beauty assistant"
+              src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247975_beauty-assistant.jpg"
+            />
+            <h2>Beauty Assistant</h2>
+            <p>
+              Tell me what you are looking for and i will work my magic to help you
+              find your perfect match.
+            </p>
+          </div>
+    
+          <div id="help">
+            <img
+              alt="help centre"
+              src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247997_help-center.jpg"
+            />
+            <h2>Help Center</h2>
+            <p>
+              Got a question? Look no further. Browse FAQs or submit your query.
+            </p>
+          </div>
+        </div>
+    
+        <div class="advertise">
+          <div>
+            <h2>Spotlight</h2>
+            <iframe
+              _ngcontent-htd-c2=""
+              allowfullscreen=""
+              frameborder="0"
+              height="225"
+              src="https://www.youtube.com/embed/NrI9d0XiP7M?rel=0&amp;showinfo=0&amp;autoplay=1"
+              width="400"
+            ></iframe>
+            <hr />
+          </div>
+          <div>
+            <h2>Shop on the go</h2>
+            <div id="app_ads">
+              <div>
+                <p>
+                  The Purplle BFF APP is now fully loaded! Get downloading now on
+                  both iOS & Android
+                </p>
+    
+                <img
+                  alt="Google Play"
+                  class="google_apple"
+                  src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247983_google-play.png"
+                />
+    
+                <img
+                  alt="App Store"
+                  class="google_apple"
+                  src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247967_app-store.png"
+                />
+              </div>
+              <div>
+                <img
+                  alt="shop on the go"
+                  src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247958_shop-on-the-go.png"
+                />
+              </div>
+            </div>
+            <hr />
+          </div>
+        </div>
+    </body>
+</html>
+<script>
+    
+    var mainData;
+    function setD(required,p){
+        var gotProducts=JSON.parse(p)
+      
+        var data=JSON.parse(required);
+        
+         showProduct(data);
+         alsoViewed(gotProducts);
+         featured(gotProducts);
+         todaysDeals(gotProducts)
+
+
+      mainData=data;
+         
+    }
+
+    function showProduct(data){
+//console.log(data)
+var small_images_Div = document.getElementById("small_images");
+  var small_image_data = data.image_url;
+  var large_image = document.getElementById("large_image_src");
+  large_image.src=data.image_url[0];
+ 
+  small_image_data.forEach(function (item) {
+    var innerDiv = document.createElement("div");
+
+
+    innerDiv.addEventListener("mouseover", function () {
+      viewLargeImage(item);
+    });
+    var image = document.createElement("img");
+    image.src = item;
+    innerDiv.append(image);
+    small_images_Div.append(innerDiv);
+  });
+  function viewLargeImage(item) {
+    var large_image = document.getElementById("large_image_src");
+  
+    large_image.src = item;
+  }
+
+  // Magnifying Effect Portion
+
+  var magnify_area=document.getElementById("large_image")
+    var magnify_img=document.getElementById("large_image_src")
+    magnify_area.addEventListener("mousemove",function(event){
+        var clientx=event.clientX-magnify_area.offsetLeft
+         var clienty=event.clientY -magnify_area.offsetTop
+
+        var mwid=magnify_area.offsetWidth
+        var mht=magnify_area.offsetHeight;
+
+        clientx=clientx/ mwid*100
+        clienty=clienty/mht*100
+        
+        magnify_img.style.transform=`translate(-${clientx}%,-${clienty}%) scale(2)`
+      
+
+    })
+    magnify_area.addEventListener("mouseleave",function() {
+        magnify_img.style.transform="translate(-50%,-50%) scale(1)"
+      
+    })
+
+
+
+  var description = document.getElementById("description");
+  description.innerText = data.Benefits;
+  var rating = document.getElementById("rating");
+  rating.innerHTML = `<button>${data.rating}<span class="iconify" data-icon="ant-design:star-filled" style="color: white;" data-width="20" data-height="15"></span></button><p>1320 Ratings |</p><p>842 Reviews</p>`;
+
+  var price = document.getElementById("price");
+  var actualPrice = data.price;
+  var discountValue = data.discount;
+  var profit = Math.round(actualPrice * discountValue);
+  var sellingPrice = actualPrice - profit;
+
+//   console.log(actualPrice);
+//   console.log(discountValue);
+//   console.log(profit);
+//   console.log(sellingPrice);
+
+  price.innerHTML = `<h2>₹${sellingPrice}</h2><p>MRP${actualPrice}</p><p>Save ₹${profit}(${
+    discountValue * 100
+  }%) off</p>`;
+
+
+
+
+
+
+var description =document.getElementById("get_description");
+description.innerText=data.description;
+
+var bestBefore=document.getElementById("best_before")
+bestBefore.innerText=`Best Before : ${data.best_before}`
+
+var skinConcern =document.getElementById("skin_concern")
+skinConcern.innerText=data.skin_concern
+
+var skinType=document.getElementById("skin_type")
+skinType.innerText=data.skin_type
+
+var speciality=document.getElementById("speciality")
+speciality.innerText=data.Speciality
+
+
+
+var benefitsSpecs=document.getElementById("benefits_specs")
+benefitsSpecs.innerText=data.Benefits
+
+var productType=document.getElementById("product_type")
+productType.innerText=data.type
+
+var origin=document.getElementById("origin")
+origin.innerText=data.origin
+    }
+   
+
+
+   // let data = JSON.parse(localStorage.getItem("DataIndivi"));
+  let cartArray = []
+  let wishListArray= [];
+  //console.log(data);
+  
+
+
+
+// Slider Portion
+
+// Also Viewed Slider
+function alsoViewed(data){
+    var alsoViewedProducts=[];
+    var totalnumber=data.length-15
+    const start = Math.floor(Math.random() * totalnumber) + 1
+    var end=start+12;
+    for(var i=start;i<end;i++){
+        alsoViewedProducts.push(data[i]);
+
+    }
+    console.log(alsoViewedProducts.length)
+    console.log("prods",alsoViewedProducts);
+    var alsoViewedSlider=document.getElementById("also_viewed_slider")
+
+alsoViewedProducts.forEach(function(item){
+  // console.log(item);
+  var innerDiv=document.createElement("div")
+  innerDiv.className="viewed_div";
+  innerDiv.id="slider_img";
+//   innerDiv.addEventListener("click",function(){
+//     displayProduct(item);
+//   })
+  var image=document.createElement("img");
+  image.src=item.image_url[0];
+  image.addEventListener("click",function(){
+      displayProduct(item);
+  })
+  var btn=document.createElement("button");
+  btn.id="slider_btn"
+  btn.innerText="ADD TO CART"
+  btn.addEventListener("click",function(){
+            addtoCart(item)
+        });
+  var title=document.createElement("p");
+  title.innerText=item.title
+   var contentDiv=document.createElement("div");
+  
+   var vActualPrice=item.price;
+   var vDiscount=item.discount;
+   var vprofit= Math.round(vActualPrice*vDiscount)
+   var vSellingPrice=vActualPrice-vprofit
+  
+
+   var displayPrice=document.createElement("h3")
+   displayPrice.innerText=`₹${vSellingPrice}`;
+
+   var displayActualPrice=document.createElement("p")
+   displayActualPrice.innerText=vActualPrice;
+
+   var vdisplayProfit=document.createElement("p");
+   vdisplayProfit.innerText=`${vDiscount*100}% off`
+   
+contentDiv.append(displayPrice,displayActualPrice,vdisplayProfit)
+innerDiv.append(image,btn,title,contentDiv)
+alsoViewedSlider.append(innerDiv)
+
+   
+})
+
+var alsoViewedSpan=document.getElementsByClassName("viewed_span");
+var viewedDiv=document.getElementsByClassName("viewed_div")
+
+var vl=0;
+alsoViewedSpan[1].onclick=()=>{
+ vl++;
+ for(var i of viewedDiv){
+   if(vl==2){
+     alsoViewedSpan[1].style.visibility="hidden"
+   }else{
+     alsoViewedSpan[1].style.visibility="visible";
+   }
+   if(vl==0){
+     alsoViewedSpan[0].style.visibility="hidden"
+   }else{
+     alsoViewedSpan[0].style.visibility="visible";
+   }
+   if(vl==0){i.style.left="0px";}
+   if(vl==1){i.style.left="-1230px";}
+   if(vl==2){i.style.left="-2460px";}
+   if(vl>2){vl=2}
+ }
+}
+alsoViewedSpan[0].onclick=()=>{
+  
+ vl--;
+ for(var i of viewedDiv){
+  if(vl==0){
+     alsoViewedSpan[0].style.visibility="hidden"
+   }else{
+     alsoViewedSpan[0].style.visibility="visible";
+   }
+   if(vl==2){
+     alsoViewedSpan[1].style.visibility="hidden"
+   }else{
+     alsoViewedSpan[1].style.visibility="visible";
+   }
+   if(vl==0){i.style.left="0px";}
+   if(vl==1){i.style.left="-1230px";}
+   if(vl==2){i.style.left="-2460px";}
+   if(vl<0){vl=0}
+ }
+}
+
+    
+}
+
+
+
+
+
+
+// featured slider
+
+function featured(data){
+    var featuredProduct=[];
+    var totalnumber=data.length-15
+    const start = Math.floor(Math.random() * totalnumber) + 1
+    var end=start+12;
+    for(var i=start;i<end;i++){
+        featuredProduct.push(data[i]);
+
+    }
+    var featuredSlider=document.getElementById("featured_slider")
+
+featuredProduct.forEach(function(item){
+  var innerDiv=document.createElement("div")
+  innerDiv.className="featured_div";
+  innerDiv.id="slider_img";
+//   innerDiv.addEventListener("click",function(){
+//     displayProduct(item);
+//   })
+  var image=document.createElement("img");
+  image.src=item.image_url[0];
+  image.addEventListener("click",function(){
+      displayProduct(item);
+  })
+  var btn=document.createElement("button");
+  btn.id="slider_btn"
+  btn.innerText="ADD TO CART"
+  btn.addEventListener("click",function(){
+            addtoCart(item)
+        });
+  var title=document.createElement("p");
+  title.innerText=item.title
+   var contentDiv=document.createElement("div");
+  
+   var vActualPrice=item.price;
+   var vDiscount=item.discount;
+   var vprofit= Math.round(vActualPrice*vDiscount)
+   var vSellingPrice=vActualPrice-vprofit
+  
+
+   var displayPrice=document.createElement("h3")
+   displayPrice.innerText=`₹${vSellingPrice}`;
+
+   var displayActualPrice=document.createElement("p")
+   displayActualPrice.innerText=vActualPrice;
+
+   var vdisplayProfit=document.createElement("p");
+   vdisplayProfit.innerText=`${vDiscount*100}% off`
+   
+contentDiv.append(displayPrice,displayActualPrice,vdisplayProfit)
+innerDiv.append(image,btn,title,contentDiv)
+featuredSlider.append(innerDiv)
+})
+
+var featuredSpan=document.getElementsByClassName("featured_span");
+var featuredDiv=document.getElementsByClassName("featured_div");
+
+var fl=0;
+
+featuredSpan[1].onclick=()=>{
+ fl++
+ for(var i of featuredDiv){
+   if(fl==2){
+     featuredSpan[1].style.visibility="hidden"
+   }else{
+     featuredSpan[1].style.visibility="visible";
+   }
+   if(fl==0){
+     featuredSpan[0].style.visibility="hidden"
+   }else{
+     featuredSpan[0].style.visibility="visible";
+   }
+   if(fl==0){i.style.left="0px";}
+   if(fl==1){i.style.left="-1230px";}
+   if(fl==2){i.style.left="-2460px";}
+   if(fl>2){fl=2}
+ }
+}
+featuredSpan[0].onclick=()=>{
+  
+ fl--;
+ for(var i of featuredDiv){
+  if(fl==0){
+     featuredSpan[0].style.visibility="hidden"
+   }else{
+     featuredSpan[0].style.visibility="visible";
+   }
+   if(fl==2){
+     featuredSpan[1].style.visibility="hidden"
+   }else{
+     featuredSpan[1].style.visibility="visible";
+   }
+   if(fl==0){i.style.left="0px";}
+   if(fl==1){i.style.left="-1230px";}
+   if(fl==2){i.style.left="-2460px";}
+   if(fl<0){fl=0}
+ }
+}
+
+
+}
+
+
+
+
+
+// Todays Deals Slider
+
+function todaysDeals(data){
+    var todaysDealsProducts=[];
+    var totalnumber=data.length-15
+    const start = Math.floor(Math.random() * totalnumber) + 1
+    var end=start+12;
+    for(var i=start;i<end;i++){
+        todaysDealsProducts.push(data[i]);
+
+    }
+    var todaysDealsSlider=document.getElementById("todays_deals_slider");
+
+todaysDealsProducts.forEach(function(item){
+  // console.log(item);
+  var innerDiv=document.createElement("div")
+  innerDiv.className="todays_deals_div";
+  innerDiv.id="slider_img";
+//   innerDiv.addEventListener("click",function(){
+//     displayProduct(item);
+//   })
+  var image=document.createElement("img");
+  image.src=item.image_url[0];
+  image.addEventListener("click",function(){
+      displayProduct(item);
+  })
+  var btn=document.createElement("button");
+  btn.id="slider_btn"
+  btn.innerText="ADD TO CART"
+  btn.addEventListener("click",function(){
+            addtoCart(item)
+        });
+  var title=document.createElement("p");
+  title.innerText=item.title
+   var contentDiv=document.createElement("div");
+  
+   var vActualPrice=item.price;
+   var vDiscount=item.discount;
+   var vprofit= Math.round(vActualPrice*vDiscount)
+   var vSellingPrice=vActualPrice-vprofit
+  
+
+   var displayPrice=document.createElement("h3")
+   displayPrice.innerText=`₹${vSellingPrice}`;
+
+   var displayActualPrice=document.createElement("p")
+   displayActualPrice.innerText=vActualPrice;
+
+   var vdisplayProfit=document.createElement("p");
+   vdisplayProfit.innerText=`${vDiscount*100}% off`
+   
+contentDiv.append(displayPrice,displayActualPrice,vdisplayProfit)
+innerDiv.append(image,btn,title,contentDiv)
+todaysDealsSlider.append(innerDiv)
+
+   
+})
+
+
+var todaysDealsSpan=document.getElementsByClassName("todays_deals_span");
+var todaysDealsDiv=document.getElementsByClassName("todays_deals_div");
+
+var tdl=0;
+
+todaysDealsSpan[1].onclick=()=>{
+ tdl++;
+ for(var i of todaysDealsDiv){
+   if(tdl==2){
+     todaysDealsSpan[1].style.visibility="hidden"
+   }else{
+     todaysDealsSpan[1].style.visibility="visible";
+   }
+   if(tdl==0){
+     todaysDealsSpan[0].style.visibility="hidden"
+   }else{
+     todaysDealsSpan[0].style.visibility="visible";
+   }
+   if(tdl==0){i.style.left="0px";}
+   if(tdl==1){i.style.left="-1230px";}
+   if(tdl==2){i.style.left="-2460px";}
+   if(tdl>2){tdl=2}
+ }
+}
+todaysDealsSpan[0].onclick=()=>{
+  
+ tdl--;
+ for(var i of todaysDealsDiv){
+  if(tdl==0){
+     todaysDealsSpan[0].style.visibility="hidden"
+   }else{
+     todaysDealsSpan[0].style.visibility="visible";
+   }
+   if(tdl==2){
+     todaysDealsSpan[1].style.visibility="hidden"
+   }else{
+     todaysDealsSpan[1].style.visibility="visible";
+   }
+   if(tdl==0){i.style.left="0px";}
+   if(tdl==1){i.style.left="-1230px";}
+   if(tdl==2){i.style.left="-2460px";}
+   if(tdl<0){tdl=0}
+ }
+}
+
+}
+
+
+
+
+function displayProduct(item){
+  let data = item;
+   window.location.href = `/products/${data._id}`;
+}
+
+
+setTimeout(function() {
+    console.log('hello',mainData);
+}, 3000);
+
+
+
+
+var addingToCart=document.getElementById("addtocart")
+var cartClick=0;
+addingToCart.addEventListener("click",function(){
+  cartClick++;
+addingToCart.innerText="IN YOUR CART"
+if(cartClick<=1){
+  addtoCart(mainData);
+}
+
+if(cartClick>1){
+ window.location.href=`/cart`;
+}
+//   console.log(cartArray)
+  // addtoCart(data);
+})
+
+
+function addtoCart(item){
+//    console.log(item);
+  //  console.log(index);
+   let toCartItem = item;
+   let uniqueId = item.code;
+   console.log(uniqueId)
+   let count = 0;
+   for(let i = 0; i < cartArray.length ; i++){
+       if(uniqueId == cartArray[i].code) alert("Item already exists in cart");
+       else count++;
+   }
+   if(count == cartArray.length){
+      // document.querySelector("#toCartBtn1").innerHTML = "ADDED TO CART";
+      cartArray.push(toCartItem);
+      window.post = function(url, data) {
+  return fetch(url, {method: "POST", headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)});
+  }
+    post("/cart", toCartItem);
+    alert("Item added to cart! Successfully") 
+   }
+   
+}
+
+var wishList=document.getElementById("save")
+var wishListClick=0;
+wishList.addEventListener("click",function(){
+  wishListClick++
+
+  if(wishListClick%2!=0){
+    wishList.innerHTML="<span class=iconify data-icon=ant-design:heart-filled  data-width=20 data-height=30 id=red_heart ></span>SAVED"
+   addtoWishList(mainData)
+  }else{
+    wishList.innerHTML="<span class=iconify data-icon=el:heart-empty  data-width=20 data-height=20 ></span>SAVE"
+  
+    removeFromWishList()
+   
+  }
+
+})
+  
+function addtoWishList(item) {
+  
+  let uniqueID=item.id;
+  let count=0;
+  for(let i=0;i<wishListArray.length;i++){
+    if(uniqueID!=wishListArray[i].id){
+      count++
+    }
+  }
+ 
+  if(count==wishListArray.length){
+ 
+    wishListArray.push(item)
+    
+    console.log("add",wishListArray)
+    window.post = function(url, data) {
+  return fetch(url, {method: "POST", headers: {'Content-Type': 'application/json'}, body: JSON.stringify(item)});
+  }
+    post("/wishlist",item);
+  }
+}
+
+function removeFromWishList() {
+
+ var removeItem=wishListArray.length-1
+ wishListArray.splice(removeItem,1)
+ 
+ fetch(`http://localhost:4905/wishlist/${mainData._id}`,{
+    method:'DELETE'
+}).then(response=>{
+    return response.json()
+}).then(data=> 
+// this is the data we get after putting our data,
+console.log("deleted data",data)
+);
+ 
+}
+</script>
+
+
+<script type="module">
+  import nav from '/navbar.js';
+
+  console.log(nav)
+  var div = document.getElementById("thatDiv");
+
+  div.innerHTML = nav();
+
+</script> 

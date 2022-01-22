@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Wish List Products</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+        <link rel="icon" href="https://media6.ppl-media.com/mediafiles/ecomm/misc/purplle-16x16.png">
+        <link rel="stylesheet" href="css/productPage.css">
+        <link rel="stylesheet" href="css/navbar.css">
+
+    </head>
+    <body onload ="setDataWish(`<%= JSON.stringify(wish)%>`)">
+        
+        <div id="thatDiv">
+
+        </div>
+
+
+        <div id="To_Be_hidden">
+            <div id="t_Center"> 
+                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Female" title="Female" class="loaded">  
+            </div>
+            <div id="To_give_Name">
+               <div id="to_change">Your Wish List </div>
+              <div id="edit_icon" >  <i style="font-size:14px" class="fas fa-pen"></i> </div>     
+            </div>
+        </div>
+
+
+        <div id="pinkDiv_Options_Wish">
+            <div id="checking"></div>
+            <div id="options_Shadow_Wish">
+                <div id="my_profile">
+                    <div><i style="font-size:50px; font-weight:100" class="far fa-smile"></i></div>
+                    <div> MY PROFILE</div>
+                </div>
+                <div id="my_orders" onclick="ordersFromWish()">
+                    <div>
+                        <img width="50" height="50" src="https://cdn-icons-png.flaticon.com/512/633/633719.png" alt="Gift free icon" title="Gift free icon" class="loaded">
+                    </div>
+                    <div>MY ORDERS</div>
+                </div>
+                <div id="my_pro" onclick="proFromWish()">
+                    <div>
+                        <img width="50" height="50" src="https://cdn-icons-png.flaticon.com/512/40/40809.png" alt="Woman head side silhouette free icon" title="Woman head side silhouette free icon" class="loaded">
+                        <!-- <img width="50" height="50" id="details-enlarged-image" class="js-search-result-thumbnail custom-height container--focus" src="https://as2.ftcdn.net/v2/jpg/02/54/32/67/1000_F_254326734_Kip5gsVxhwXvZh37YmgeoUbNPrd0DgyN.jpg" alt="Man and woman feces logo. Male and female face silhouette. Side view. Vector illustration." itemprop="thumbnail" data-content-id="254326734"> -->
+                    </div>
+                    <div>BEAUTY PROFILE</div>
+                </div>
+                <div id="my_wishlist" onclick="wishFromWish()">
+                    <div>
+                        <div id="myWish">
+                            <img width="50" height="50" src="https://cdn-icons-png.flaticon.com/512/833/833300.png" alt="Heart free icon" title="Heart free icon" class="loaded">
+                        </div>
+                    </div>
+                    <div>MY WISHLIST</div>
+                </div>
+                <div id="my_coupons">
+                    <div>
+                        <img width="50" height="50" src="https://cdn-icons-png.flaticon.com/512/879/879757.png" alt="Discount free icon" title="Discount free icon" class="loaded">
+                    </div>
+                    <div>MY COUPONS</div>
+                </div>
+                <div id="my_wallet">
+                    <div>
+                        <img width="60" height="50" src="https://cdn-icons-png.flaticon.com/512/482/482541.png" alt="Money" title="Money" class="loaded">
+                    </div>
+                    <div>MY WALLET</div>
+                </div>
+                <div id="my_payment">
+                    <div>
+                        <img width="60" height="50" src="https://cdn-icons-png.flaticon.com/512/4021/4021708.png" alt="Credit cards free icon" title="Credit cards free icon" class="loaded">
+                    </div>
+                    <div>PAYMENTS</div>
+                </div>
+                <div id="my_reviews"> 
+                    <div>
+                        <img width="50" height="50" src="https://cdn-icons-png.flaticon.com/512/1014/1014900.png" alt="Pen tool" title="Pen tool" class="loaded">
+                    </div>
+                    <div>REVIEWS</div>
+                </div>
+            </div>
+        </div>
+
+        <h3 id="dream_true">Wishes Do Come True</h3>
+        <div id="product_wishlist">
+
+        </div>
+
+
+<!-- FOOTER PLACE CONTENTS -->
+<!-- FOOTER PLACE CONTENTS -->
+<!-- FOOTER PLACE CONTENTS -->    
+    <div id="secure_assist_help">
+        <div id="secure">
+        <img
+            _ngcontent-htd-c2=""
+            alt="secure payments"
+            class="w100p mr0auto mx-w120 db pdt25 pdb25 visible"
+            src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247950_secure-payment.jpg"
+        />
+        <h2>100% Secure Payment</h2>
+        <p>All major credit &amp; debit cards accepted.</p>
+        </div>
+
+        <div id="assist">
+        <img
+            alt="beauty assistant"
+            src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247975_beauty-assistant.jpg"
+        />
+        <h2>Beauty Assistant</h2>
+        <p>
+            Tell me what you are looking for and i will work my magic to help you
+            find your perfect match.
+        </p>
+        </div>
+
+        <div id="help">
+        <img
+            alt="help centre"
+            src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247997_help-center.jpg"
+        />
+        <h2>Help Center</h2>
+        <p>
+            Got a question? Look no further. Browse FAQs or submit your query.
+        </p>
+        </div>
+    </div>
+
+    <div class="advertise">
+        <div>
+        <h2>Spotlight</h2>
+        <iframe
+            _ngcontent-htd-c2=""
+            allowfullscreen=""
+            frameborder="0"
+            height="225"
+            src="https://www.youtube.com/embed/NrI9d0XiP7M?rel=0&amp;showinfo=0&amp;autoplay=1"
+            width="400"
+        ></iframe>
+        <hr id="footer_hr"/>
+        </div>
+        <div>
+        <h2>Shop on the go</h2>
+        <div id="app_ads">
+            <div>
+            <p>
+                The Purplle BFF APP is now fully loaded! Get downloading now on
+                both iOS & Android
+            </p>
+
+            <img
+                alt="Google Play"
+                class="google_apple"
+                src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247983_google-play.png"
+            />
+
+            <img
+                alt="App Store"
+                class="google_apple"
+                src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247967_app-store.png"
+            />
+            </div>
+            <div>
+            <img
+                alt="shop on the go"
+                src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247958_shop-on-the-go.png"
+            />
+            </div>
+        </div>
+        <hr id="footer_hr"/>
+        </div>
+    </div>
+<!-- Footer Part of Content -->
+<!-- Footer Part of Content -->
+<!-- Footer Part of Content -->
+
+    </body>
+</html>
+
+<script>
+    let wish = [];
+    function setDataWish(wish){
+    let prod = JSON.parse(wish);
+    ShowWishProduct(prod);
+}
+     document.getElementById("my_wishlist").style.borderBottom = "7px solid #e40980"
+    function ordersFromWish(){
+        document.getElementById("product_wishlist").innerHTML = "";
+        document.getElementById("my_wishlist").style.borderBottom = "none";
+        document.getElementById("my_pro").style.borderBottom = "none";
+        document.getElementById("my_orders").style.borderBottom = "6px solid #e40980"
+        // <img width="256" height="256" src="https://cdn-icons-png.flaticon.com/512/6350/6350755.png" alt="Boxing day free icon" title="Boxing day free icon" class="loaded">
+        ShowWishOrders();
+    }
+
+    function proFromWish(){
+        document.getElementById("product_wishlist").innerHTML = "";
+        document.getElementById("my_wishlist").style.borderBottom = "none";
+        document.getElementById("my_orders").style.borderBottom = "none";
+        document.getElementById("my_pro").style.borderBottom = "6px solid #e40980";
+        showBeautyProfile();
+    }
+
+    function wishFromWish(){
+        document.getElementById("product_wishlist").innerHTML = "";
+        document.getElementById("my_pro").style.borderBottom = "none";
+        document.getElementById("my_orders").style.borderBottom = "none";
+       document.getElementById("my_wishlist").style.borderBottom = "6px solid #e40980";
+       ShowWishProduct(wish_Data);
+    }
+
+    let wishDiv = document.getElementById("product_wishlist");
+
+    let wish_Data = JSON.parse(localStorage.getItem("product_wishlist")) || [];
+
+    console.log(wish_Data);
+   
+
+    let cartArray = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+function ShowWishProduct(wish_Data){
+         wishDiv.innerHTML="";
+    wish_Data.map(function(wish,index){
+        console.log(wish);
+        console.log((wish.price * (1-wish.discount))) 
+
+        let masterDiv = document.createElement("div");
+        masterDiv.setAttribute("id","wish_MasterDiv");
+
+        let image = document.createElement("img");
+        image.setAttribute("id","image_Wish");
+        image.src= wish.image_url[0];
+        image.onclick= () => {
+            showThatprodfromWish(wish);
+        }
+
+        let divCenter = document.createElement("div");
+        divCenter.setAttribute("id","div_Center");
+
+        let h5tag = document.createElement("p");
+        h5tag.setAttribute("id","title_Wish");
+        h5tag.innerHTML = wish.title;
+
+        let prices = document.createElement("div");
+        prices.setAttribute("id","price_wishDiv");
+        prices.style.marginTop = "-15px"
+        
+        let price = document.createElement("p");
+        price.style.fontSize = "17px";
+        let finalprice = Math.round((wish.price * (1-wish.discount))) 
+        price.innerHTML = `₹${finalprice}`;
+        
+
+        let mrp = document.createElement("p");
+        mrp.style.fontSize = "14px";
+        mrp.innerHTML = wish.price;
+        mrp.style.color = "grey"
+        mrp.style.textDecoration = "line-through";
+
+        let discount = document.createElement("p");
+        discount.style.fontSize = "15px";
+        discount.style.color = "#ec008c";
+        let newPer = wish.discount*100
+        discount.innerHTML = `${newPer}% off`
+
+        prices.append(price,mrp,discount);
+
+        let rating = document.createElement("div");
+        let ratingtag = document.createElement("p");
+        ratingtag.innerHTML = `${wish.rating} <i style="font-size:8px" class="fas fa-star"></i>` ;
+        rating.setAttribute("id","ratingOf_Wish");
+        rating.append(ratingtag);
+        if(wish.rating < 4.0 && wish.rating >= 2) rating.style.backgroundColor = "#cdd614";
+        if(wish.rating < 2.5) rating.style.backgroundColor = "#ff7800"
+        
+        divCenter.append(h5tag,prices,rating);
+
+        let btnDiv = document.createElement("div");
+        btnDiv.setAttribute("id","btnDiv_wish");
+        
+        let btn = document.createElement("button");
+        btn.innerHTML = "ADD TO CART";
+        btn.onclick = () => {
+            addingtoCartFromWish(wish,index,cartArray);
+        }
+        let removeP = document.createElement("p");
+        removeP.setAttribute("id","remove_wish");
+        removeP.style.fontSize = "14px"
+        removeP.innerHTML = "Remove from wish list";
+        removeP.style.color = "#ec008c";
+        removeP.onclick = () =>{
+            removeFromCartFromWish(wish,index);
+        }
+       btnDiv.append(btn,removeP);
+
+       var diff = document.createElement("hr");
+       diff.setAttribute("id","diff_div")
+
+       masterDiv.append(image,divCenter,btnDiv);
+       wishDiv.append(masterDiv,diff)
+    })
+}
+
+function addingtoCartFromWish(wish,index,cartArray){
+    let toCartItem = wish;
+    let uniqueId = wish.id;
+    let count = 0;
+    for(let i = 0; i < cartArray.length ; i++){
+        if(uniqueId == cartArray[i].id) alert("Item already exists in cart");
+        else count++;
+    }
+    if(count == cartArray.length){
+        window.post = function(url, data) {
+        return fetch(url, {method: "POST", headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)});
+        }
+    post("/cart", toCartItem);
+       alert("Item added to cart! Successfully")  
+    }   
+ }
+
+ function removeFromCartFromWish(wish,index){
+    let remCart = wish;
+    window.post = function(url) {
+    return fetch(url, {method: "DELETE", headers: {'Content-Type': 'application/json'}});
+  }
+    post(`/wishlist/${remCart._id}`);
+    window.location.reload();
+ }
+           
+    function  sendToWishList(item){
+        let wishItem = item
+        window.post = function(url, data) {
+        return fetch(url, {method: "POST", headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)});
+        }
+    post("/cart", wishItem);
+}
+
+
+ let wishStepstoBeauty = [
+     "wish_photos/skincare.png",
+     "https://cdn-icons-png.flaticon.com/512/2025/2025516.png",
+     "wish_photos/freshness.png",
+     "https://cdn-icons-png.flaticon.com/512/1754/1754656.png",
+     "wish_photos/beauty.png"
+ ];
+
+ let stepsState = [
+     "Wash your Face with our faceWash",
+     "Prepare your Skin with our Skin care products",
+     "Feel the instant Freshness",
+     "Apply Makeup from our wide range of makeup products",
+     "Hey Beautiful! 😘 😍 💋 "
+
+ ]
+
+ let i = 0 ;
+function showBeautyProfile(){
+    wishDiv.innerHTML = "";
+
+    let image = document.createElement("img");
+    image.setAttribute("id","beauty_wish");
+    image.src = "wish_photos/before.png"
+
+    let beautyBtn = document.createElement("button");
+    beautyBtn.setAttribute("id","to_beauty");
+
+    beautyBtn.innerHTML = "Click To Beautify";
+    beautyBtn.onclick = () =>{
+        makeBeauty();
+    }
+
+    // https://cdn-icons-png.flaticon.com/512/3131/3131808.png
+
+    wishDiv.append(image,beautyBtn);
+}
+
+    let idSS = null;
+   
+    function makeBeauty(){
+      
+       idSS = setInterval(function(){
+        wishDiv.innerHTML = "";
+
+        let h3tag = document.createElement("h1");
+        h3tag.setAttribute("id","steps_to_Beauty");
+        h3tag.innerHTML = stepsState[i];
+
+        
+        var imageShow = document.createElement("img");
+        imageShow.setAttribute("id","tomake_beauty");
+        imageShow.setAttribute("src",wishStepstoBeauty[i]);
+       
+        wishDiv.append(h3tag,imageShow);
+        i++;
+
+        if(i == wishStepstoBeauty.length) stopSS() ;
+
+    },1200);
+
+    }
+
+    function stopSS(){
+        clearInterval(idSS);
+    }
+   
+function showThatprodfromWish(wish){
+    let data = wish;
+    localStorage.setItem("DataIndivi",JSON.stringify(data));
+    window.location.href = `/products/${data._id}`;
+}
+
+
+function ShowWishOrders(){
+    wishDiv.innerHTML = "";
+
+    let h3tag = document.createElement("h2");
+    h3tag.setAttribute("id","steps_to_Beauty");
+    h3tag.innerHTML = "Your Orders are with Us. Sit back and relax";
+
+    let image = document.createElement("img");
+    image.setAttribute("id","ordersFrom_wish_delivery");
+    image.src = "https://cdn-icons.flaticon.com/png/512/3855/premium/3855480.png?token=exp=1639828139~hmac=f3f5b4af68cac68370677ad71b10fb40";
+
+    wishDiv.append(h3tag,image);
+}
+</script>
+
+
+<script type="module">
+    import nav from '/navbar.js';
+
+    console.log(nav)
+    var div = document.getElementById("thatDiv");
+
+    div.innerHTML = nav();
+
+</script> 
+
