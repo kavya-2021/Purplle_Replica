@@ -22,7 +22,7 @@
 #### Data Base
 - `MongoDB Atlas`
 ---
-## Features ✖️
+## Features 
 ##### - Google Authentication.
 ##### - User can buy any type of beauty product.
 ##### - They can use this website from any device.
