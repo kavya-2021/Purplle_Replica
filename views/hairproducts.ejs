@@ -762,6 +762,7 @@ if(count == cartArray.length){
   return fetch(url, {method: "POST", headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data)});
   }
     post("/cart", toCartItem);
+    localStorage.setItem("cartItems", JSON.stringify(cartArray));
    alert("Item added to cart! Successfully")  
 }   
 }
