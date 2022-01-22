@@ -78,33 +78,33 @@ const faceController = require('./controllers/face.controller');
 
 app.use("/faceproducts",faceController);
 
-// // crud for the ejs control of hairCare products
+// crud for the ejs control of hairCare products
 
-// const hairController = require('./controllers/hair.controller');
+const hairController = require('./controllers/hair.controller');
 
-// app.use("/hairproducts",hairController);
+app.use("/hairproducts",hairController);
 
-// // crud for the ejs control of Skin-Care products
+// crud for the ejs control of Skin-Care products
 
-// const skinController = require('./controllers/skin.controller');
+const skinController = require('./controllers/skin.controller');
 
-// app.use("/skinproducts",skinController);  
+app.use("/skinproducts",skinController);  
 
-// // crud for the ejs control of Wish List products
+// crud for the ejs control of Wish List products
 
-// const wishController = require('./controllers/wish.controller');
+const wishController = require('./controllers/wish.controller');
 
-// app.use("/wishlist",wishController);
+app.use("/wishlist",wishController);
 
-// // crud for the ejs control of all products
+// crud for the ejs control of all products
 
-// const productController = require('./controllers/product.controller');
+const productController = require('./controllers/product.controller');
 
-// app.use("/products",productController);
+app.use("/products",productController);
 
-// const cartController = require('./controllers/cart.controller');
+const cartController = require('./controllers/cart.controller');
 
-// app.use("/cart",cartController);
+app.use("/cart",cartController);
 
 
 module.exports = app
