@@ -92,9 +92,9 @@ app.use("/skinproducts",skinController);
 
 // // crud for the ejs control of Wish List products
 
-// const wishController = require('./controllers/wish.controller');
+const wishController = require('./controllers/wish.controller');
 
-// app.use("/wishlist",wishController);
+app.use("/wishlist",wishController);
 
 // // crud for the ejs control of all products
 
@@ -102,9 +102,9 @@ const productController = require('./controllers/product.controller');
 
 app.use("/products",productController);
 
-// const cartController = require('./controllers/cart.controller');
+const cartController = require('./controllers/cart.controller');
 
-// app.use("/cart",cartController);
+app.use("/cart",cartController);
 
 
 // module.exports = app
