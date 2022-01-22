@@ -107,4 +107,16 @@ const cartController = require('./controllers/cart.controller');
 app.use("/cart",cartController);
 
 
+const addressContoller = require("./controllers/address.controller");
+
+app.use("/address",addressContoller);
+
+const paymentContoller = require("./controllers/payment.controller");
+
+app.use("/payment",paymentContoller);
+
+
+const sucContoller = require("./controllers/suc.controller");
+
+app.use("/success",sucContoller);
 // module.exports = app

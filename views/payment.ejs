@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <link rel="stylesheet" href="/comp/navcss.css">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <link rel="icon" href="https://media6.ppl-media.com/mediafiles/ecomm/misc/purplle-16x16.png">
+    <title>Payment</title>
+    <style>
+        #mainDiv2
+        {
+            display: grid;
+            grid-template-columns: 50% 30%;
+            justify-content: center;
+            column-gap: 15px;
+           
+            height: 200px;
+        }
+        #leftDiv
+        { 
+             height: 300px;
+            border: 1px solid rgb(252, 255, 71);
+        }
+        #rightDiv
+        {
+             
+            border: 1px solid rgb(255, 71, 224);
+        }
+        #secureBox
+        {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            margin: 0px 40px 0px 40px;
+            border: 1px solid gray;
+        }
+        #secureBox >div >img
+        {
+            width: 40px;
+            padding: 20px 0px 0px 30px;
+        }
+        #secureBox >div > h3
+        {
+             transform: translate(-0%,20%);
+        }
+        #secureBox >div > p
+        {
+             transform: translate(-0%,-70%);
+        }
+        #pinCode
+        {
+            display: flex;
+            margin: 10px 40px 0px 40px ;
+        }
+        #pinCode >input
+        {
+            border: oldlace;
+            
+        }
+        #pinCode >p
+        {
+            cursor: pointer;
+            color: #e40980;
+        }
+        #priceDetails
+        {
+            padding: 0px 40px 0px 40px;
+        }
+        #priceDetails span
+        {
+                float: right;
+        }
+        #priceDetails button
+        {
+            width: 100%;
+            height: 50px;
+            margin-bottom: 50px;
+            border: none;
+            background-color: #e40980;
+             
+            font-size: large;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* left Div Star From Here  */
+
+        #MyCart
+        {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(179, 174, 174);
+            height: 50px;
+             
+             
+        }
+        #MyC
+        {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(179, 174, 174);
+            height: 50px;
+            margin-top: 20px;
+             
+        }
+        #MyC > h4
+        {
+            margin: 15px 10px 10px 10px;
+        }
+        #MyCart >h4
+        {
+            margin: 15px 10px 10px 10px;
+            
+        }
+        .shopmore
+        {
+            font-size: large;
+            color: #e40980;
+            padding-right: 10px;
+        }
+        .shopmore span
+        {
+            font-size: 40px;
+            font-weight: bold;
+            
+        }
+
+        #products
+        {
+            display: grid;
+            grid-template-columns: 12% 67% 20%;
+             margin-top: 20px;
+            border: 1px solid red;
+        }
+        #products >div >img
+        {
+            margin-top: 40px;
+            padding-left: 15px;
+            width: 50px;
+            height: 50px;
+        }
+         
+        #products >div >p >span
+        {
+            float:right
+        }
+        .price
+        {
+            text-align: end;
+        }
+        #QtyDiv >select
+        {
+            border: none;
+        }
+        #QtyDiv
+        {
+            display: flex;
+            
+            
+        }
+        #divButton
+        {
+            display: flex;
+             
+        }
+        #divButton > button
+        {
+            border: none;
+            cursor: pointer;
+
+        }
+        .dash
+        {
+           margin: 10px 20px ;
+        }
+        #address >div
+        {
+            margin-top: 50px;
+        }
+       
+       #cardno
+       {
+           display: flex;
+           column-gap: 30px;
+
+       }
+       #cardno >input
+       {
+           margin: 5px;
+           padding: 10px;
+           width: 30%;
+       }
+        #month_card
+        {
+            display: flex;
+        }
+        #month_card >input
+        {
+            margin: 5px;
+            padding: 10px;
+        }
+        
+        #nameon >input
+        {
+            margin: 5px;
+            width: 70%;
+            padding: 10px;
+        }
+        #bu
+        {
+            margin: 5px;
+            height: 40px;
+            width: 120px;
+        }
+        #address
+        {
+            justify-content: center;
+        }
+        #Delivery
+        {
+            
+            margin: 10px;
+        }
+        #boader
+        {
+            margin-top: 20px;
+            border: 1px solid silver;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="thatDiv"></div>
+
+    <div id="mainDiv2">
+        <div id="leftDiv">
+
+            <div id="MyCart">
+                <h4>Debit/Cridit Card</h3>
+                
+                <a href=""><p class="shopmore"></p></a> 
+            </div>
+
+            <div id="address">
+ 
+                    <div id = "nameon">
+                        <input type="text" placeholder="Name on card">
+                        <div id = "cardno">
+                            <input id="card" type="number" placeholder="Card number" oninput ="checkCard()">
+                            <input id="cvv" type="password" placeholder="CVV" oninput ="checkcvv()">
+                        </div>
+                        <div id="month_card">
+                               <input id="month" type="text" placeholder="Expiry MM" oninput ="checkmonth()">
+                        <input id="year"  placeholder="Expiry YY" oninput ="checkyear()">
+                        </div>
+                     
+                        
+                    </div>
+                    <button id="bu"  >PAYMENT</button>
+            </div>
+            <div id="boader">
+                <div id="MyC">
+                    <h4>Cash on Delivery</h3>
+                    
+                    <a href=""><p class="shopmore"></p></a> 
+                </div>
+                <div id = "Delivery">
+                   
+                   
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html" id="pay">Pay on Delivery</label> 
+                    
+                 
+                    
+                </div>
+                 
+            </div>
+        </div>
+        <div id="rightDiv">
+            <div id="secureBox">
+                <div>
+                    <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1515664301_shield.png" alt="">
+                </div>
+               <div>
+                   <h3>1 0 0 % Safe Payments</h3>
+                   <p>Genuine Products | Easy Returns</p>
+               </div>
+
+            </div>
+
+           
+
+            <div id="priceDetails">
+                <h4>Price Details</h4>
+                <p>Total MRP: <span id="TotalMrp">RS Null</span></p>
+                <p>Saving MRP: <span id="savingmrp">RS Null</span></p>
+                <p>Subtotal: <span id="subtotal">RS Null</span></p>
+                <p>Shipping charges: <span id="shipping">RS Null</span></p>
+                <p>Coupon Discount: <span id="coupon">Applied</span></p>
+                <hr>
+                <h3 id="s">Order total: <span id="ordertotal">Rs Null</span></h3>
+                <p>You Save: <span id="yousave">RS Null</span></p>
+               
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+ 
+<script >
+    // Importing the nav
+    // import nav from './comp/navjs.js';
+    // var div = document.getElementById("thatDiv");
+    // div.innerHTML = nav();
+    var TotalMrp = document.getElementById("TotalMrp");
+    var savingmrp = document.getElementById("savingmrp");
+    var subtotal = document.getElementById("subtotal");
+    var shipping = document.getElementById("shipping");
+    
+    var ordertotal = document.getElementById("ordertotal");
+    var yousave = document.getElementById("yousave");
+     
+    var data = JSON.parse(localStorage.getItem("arr"));
+    console.log(data)
+
+    TotalMrp.innerHTML = data[0];
+    savingmrp.innerHTML = data[1]
+    subtotal.innerHTML = data[2]
+    shipping.innerHTML = "Rs 50"
+    ordertotal.innerHTML = data[3]
+    yousave.innerHTML   =data[4]
+      
+    var ordertotal = document.getElementById("bu");
+      
+    var data = JSON.parse(localStorage.getItem("arr"));
+    console.log(data)
+ 
+    ordertotal.innerHTML = `PAY ₹${data[3]}`
+                
+    document.getElementById("html").addEventListener('click', function (event) {
+    if (event.target && event.target.matches("input[type='radio']")) {
+         alert("Your Will Pay On Delivery")
+         window.location.href = "/success"
+    }
+});
+          
+</script>
+
+ <script>
+var month = null ;
+var year = null ;
+var card = null;
+var cvv = null ;
+
+function checkCard(){
+    let cardNum = document.querySelector("#card").value ;
+    card = cardNum;
+    if(cardNum.length > 16) {
+        alert("Please enter valid card number");
+        card = "";
+    }
+}
+
+function checkmonth(){
+    let m = document.querySelector("#month").value;
+    month = Number(m) ;
+    if(m.length > 2 || month > 12) alert("Please enter valid month")
+}
+
+function checkyear(){
+    let y = document.querySelector("#year").value;
+    year = Number(y) ;
+    if( y.length > 4) alert("Please enter valid year");
+    else if(y.length == 4 && year < 2022) alert("Card validity expired");
+}
+
+function checkcvv(){
+    let cv = document.querySelector("#cvv").value;
+    cvv = cv ;
+    if( cv.length > 3) {
+        alert("CVV must be only 3 digits");
+        cvv = "";
+    }
+}
+
+console.log(card, month , year, cvv);
+
+    
+    document.getElementById("bu").addEventListener("click",function(){
+        if(card.length==16 && month<=12 && year> 2021 && cvv.length ==3){ 
+                    alert("Payment Successful! ");
+                    window.location.href="/success";
+        } else alert ("Please enter valid")
+       
+    })
+ </script>

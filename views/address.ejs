@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <link rel="stylesheet" href="/comp/navcss.css">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <link rel="icon" href="https://media6.ppl-media.com/mediafiles/ecomm/misc/purplle-16x16.png">
+    <title>Cart</title>
+    <style>
+        #mainDiv2
+        {
+            display: grid;
+            grid-template-columns: 60% 30%;
+            justify-content: center;
+            column-gap: 15px;
+           
+            height: 400px;
+             
+        }
+        #leftDiv
+        { 
+             margin-bottom: 200px;
+            
+        }
+        
+        #secureBox
+        {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            margin: 0px 40px 0px 40px;
+            border: 1px solid gray;
+        }
+        #secureBox >div >img
+        {
+            width: 40px;
+            padding: 20px 0px 0px 30px;
+        }
+        #secureBox >div > h3
+        {
+             transform: translate(-0%,20%);
+        }
+        #secureBox >div > p
+        {
+             transform: translate(-0%,-70%);
+        }
+        #pinCode
+        {
+            display: flex;
+            margin: 10px 40px 0px 40px ;
+        }
+        #pinCode >input
+        {
+            border: oldlace;
+            
+        }
+        #pinCode >p
+        {
+            cursor: pointer;
+            color: #e40980;
+        }
+        #priceDetails
+        {
+            padding: 0px 40px 0px 40px;
+        }
+        #priceDetails span
+        {
+                float: right;
+        }
+        #priceDetails button
+        {
+            width: 100%;
+            height: 50px;
+            margin-bottom: 50px;
+            border: none;
+            background-color: #e40980;
+             
+            font-size: large;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        /* left Div Star From Here  */
+
+        #MyCart
+        {
+            display: flex;
+            justify-content: space-between;
+             
+             
+        }
+        .shopmore
+        {
+            font-size: large;
+            color: #e40980;
+            padding-right: 10px;
+        }
+        .shopmore span
+        {
+            font-size: 40px;
+            font-weight: bold;
+            
+        }
+
+        #products
+        {
+            display: grid;
+            grid-template-columns: 12% 67% 20%;
+             margin-top: 20px;
+            border: 1px solid red;
+        }
+        #products >div >img
+        {
+            margin-top: 40px;
+            padding-left: 15px;
+            width: 50px;
+            height: 50px;
+        }
+         
+        #products >div >p >span
+        {
+            float:right
+        }
+        .price
+        {
+            text-align: end;
+        }
+        #QtyDiv >select
+        {
+            border: none;
+        }
+        #QtyDiv
+        {
+            display: flex;
+            
+            
+        }
+        #divButton
+        {
+            display: flex;
+             
+        }
+        #divButton > button
+        {
+            border: none;
+            cursor: pointer;
+
+        }
+        .dash
+        {
+           margin: 10px 20px ;
+        }
+        
+        #address >div
+        {
+            margin-top: 50px;
+        }
+        #name
+        {
+            display: grid;
+            grid-template-columns: 20% 78%;
+            justify-content: space-around;
+            
+             column-gap: 5px;
+        }
+        #name >input, #name >select
+        {
+             
+            padding: 10px;
+            border: none;
+             border-bottom: 2px solid #e40980;
+        } 
+        #city
+        {
+            display: grid;
+            grid-template-columns: 47% 47%;
+            column-gap: 5px;
+            justify-content: space-around;
+            
+            
+        }
+        #city >input
+        {
+            padding: 10px;
+            
+            border: none;
+             border-bottom: 2px solid #e40980;
+        }
+        #middle >input
+        {
+            margin-top: 50px;
+            padding: 10px;
+           
+            
+        }
+        #middle >input
+        {
+           
+             width: 95%;
+             margin-top: 10px; 
+             border: none;
+             border-bottom: 2px solid #e40980;
+        }
+        #bu
+        {
+            border: none;
+            color: wheat;
+            background-color: #e40980;
+            border-radius: 5px;
+            margin-top: 40px;
+            margin-left: 250px;
+            width: 300px;
+            height: 70px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="thatDiv"></div>
+
+    <div id="mainDiv2">
+        <div id="leftDiv">
+
+            <div id="MyCart">
+                <h4>Add Address</h3>
+                
+                <a href=""><p class="shopmore">Shop More <i class="fas fa-angle-right"></i></p></a> 
+            </div>
+
+            <div id="address">
+
+                    <div id = "name">
+                        <select name="" id="">
+                            <option value="">Mr</option>
+                            <option value="">Miss</option>
+                        </select>
+                        <input type="text" placeholder="Name">
+
+                    </div>
+                    <div id = "middle">
+                         <input type="text" placeholder="Pincode">
+                    <input type="text" placeholder="Address">
+                    <input type="text" placeholder="Landmark">
+                    </div>
+                   
+
+                    <div id = "city">
+                        <input type="text" placeholder="City" >
+                        <input type="text" name="" id="" placeholder="State">
+                    </div>
+                    <button id="bu"  >PAYMENT</button>
+            </div>
+        </div>
+        <div id="rightDiv">
+            <div id="secureBox">
+                <div>
+                    <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1515664301_shield.png" alt="">
+                </div>
+               <div>
+                   <h3>1 0 0 % Safe Payments</h3>
+                   <p>Genuine Products | Easy Returns</p>
+               </div>
+
+            </div>
+
+            <div id="pinCode">
+                <input type="text" placeholder="Enter Pincode">
+                <p>CHECK DELIVERY</p>
+            </div>
+
+            <div id="priceDetails">
+                <h4>Price Details</h4>
+                <p>Total MRP: <span id="TotalMrp">RS Null</span></p>
+                <p>Saving MRP: <span id="savingmrp">RS Null</span></p>
+                <p>Subtotal: <span id="subtotal">RS Null</span></p>
+                <p>Shipping charges: <span id="shipping">RS Null</span></p>
+                <p>Coupon Discount: <span id="coupon">Applied</span></p>
+                <hr>
+                <h3>Order total: <span id="ordertotal">Rs Null</span></h3>
+                <p>You Save: <span id="yousave">RS Null</span></p>
+               
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+ 
+<script>
+    // Importing the nav
+    
+    
+   
+
+    // getting data from local
+     var TotalMrp = document.getElementById("TotalMrp");
+    var savingmrp = document.getElementById("savingmrp");
+    var subtotal = document.getElementById("subtotal");
+    var shipping = document.getElementById("shipping");
+    
+    var ordertotal = document.getElementById("ordertotal");
+    var yousave = document.getElementById("yousave");
+     
+    var data = JSON.parse(localStorage.getItem("arr"));
+    console.log(data)
+
+    TotalMrp.innerHTML = data[0];
+    savingmrp.innerHTML = data[1]
+    subtotal.innerHTML = data[2]
+    shipping.innerHTML = "Rs 50"
+    ordertotal.innerHTML = data[3]
+    yousave.innerHTML   =data[4]
+    
+        
+               //console.log(qty)
+
+               document.getElementById("bu").addEventListener("click",function(){
+                   window.location.href = "/payment"
+               })
+         
+       
+
+    
+</script>
+ 
