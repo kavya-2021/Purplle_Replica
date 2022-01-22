@@ -33,41 +33,41 @@ app.get("/", function (req, res) {
 // // app.use("/" , Homepage);
 
 
-// // Passport Config
-// require('./configs/passport')(passport);
+// Passport Config
+require('./configs/passport')(passport);
 
-// // DB Config
-// const db = require('./configs/keys').mongoURI;
+// DB Config
+const db = require('./configs/keys').mongoURI;
 
-// // Express session
-// app.use(
-//     session({
-//       secret: 'secret',
-//       resave: true,
-//       saveUninitialized: true
-//     })
-//   );
+// Express session
+app.use(
+    session({
+      secret: 'secret',
+      resave: true,
+      saveUninitialized: true
+    })
+  );
 
-// // Passport middleware
-// app.use(passport.initialize());
-// app.use(passport.session());
+// Passport middleware
+app.use(passport.initialize());
+app.use(passport.session());
 
-// // Connect flash
-// app.use(flash());
+// Connect flash
+app.use(flash());
 
 
 
-// // Global variables
-// app.use(function(req, res, next) {
-//     res.locals.success_msg = req.flash('success_msg');
-//     res.locals.error_msg = req.flash('error_msg');
-//     res.locals.error = req.flash('error');
-//     next();
-//   });
+// Global variables
+app.use(function(req, res, next) {
+    res.locals.success_msg = req.flash('success_msg');
+    res.locals.error_msg = req.flash('error_msg');
+    res.locals.error = req.flash('error');
+    next();
+  });
   
-//   // Routes
-//   app.use('/', require('./controllers/auth.controller.js'));
-//   app.use('/users', require('./controllers/users.controller.js'));
+  // Routes
+  app.use('/', require('./controllers/auth.controller.js'));
+  app.use('/users', require('./controllers/users.controller.js'));
   
 
 
