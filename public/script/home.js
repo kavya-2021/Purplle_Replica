@@ -481,7 +481,7 @@ let products = [
           oneBenefit : "Long Lasting",
           type: "lipStick",
           origin : "India",
-          image_url : ["https://media6.ppl-media.com/tr:h-750,w-750,c-at_max/static/img/product/224415/purplle-mini-liquid-lipstick-maroon-my-first-hook-up-11-4-8-ml-48_9_display_1632903538_2c535504.jpg","https://media6.ppl-media.com/tr:h-750,w-750,c-at_max/static/img/product/224415/purplle-mini-liquid-lipstick-maroon-my-first-hook-up-11-4-8-ml-48_7_display_1627621814_cc476091.jpg","https://media6.ppl-media.com/tr:h-750,w-750,c-at_max/static/img/product/224415/purplle-mini-liquid-lipstick-maroon-my-first-hook-up-11-4-8-ml-48_8_display_1627621815_cccb9360.jpg","https://media6.ppl-media.com/tr:h-750,w-750,c-at_max/static/img/product/224415/purplle-mini-liquid-lipstick-maroon-my-first-hook-up-11-4-8-ml-48_3_display_1627621810_629d7ab4.jpg"]
+          image_url : ["https://media6.ppl-media.com/tr:h-750,w-750,c-at_max/static/img/product/263030/ny-bae-liquid-lipstick-holiday-collection-ice-cold-holiday-4-gm_11_display_1632323929_c4a08b28.jpg","https://media6.ppl-media.com/tr:h-750,w-750,c-at_max/static/img/product/224415/purplle-mini-liquid-lipstick-maroon-my-first-hook-up-11-4-8-ml-48_7_display_1627621814_cc476091.jpg","https://media6.ppl-media.com/tr:h-750,w-750,c-at_max/static/img/product/224415/purplle-mini-liquid-lipstick-maroon-my-first-hook-up-11-4-8-ml-48_8_display_1627621815_cccb9360.jpg","https://media6.ppl-media.com/tr:h-750,w-750,c-at_max/static/img/product/224415/purplle-mini-liquid-lipstick-maroon-my-first-hook-up-11-4-8-ml-48_3_display_1627621810_629d7ab4.jpg"]
       },
       {
           id : "AT",
@@ -592,7 +592,7 @@ let products = [
    function redirectedProduct(item){
       let data = item;
       localStorage.setItem("DataIndivi",JSON.stringify(data));
-      window.location.href = `/products/${data._id}`
+      window.location.href = `/faceproducts/61e8fdc99b12bba62a66aae9`
       ;
   }
   
