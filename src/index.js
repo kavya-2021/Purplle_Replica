@@ -76,7 +76,7 @@ app.get("/", function (req, res) {
 
 const faceController = require('./controllers/face.controller');
 
-app.use("/faceproducts",faceController);
+app.use("https://purplle--clone.herokuapp.com/faceproducts",faceController);
 
 // // crud for the ejs control of hairCare products
 
