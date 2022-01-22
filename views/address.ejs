@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
      
-    <link rel="stylesheet" href="/comp/navcss.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
     <link rel="icon" href="https://media6.ppl-media.com/mediafiles/ecomm/misc/purplle-16x16.png">
     <title>Cart</title>
@@ -320,4 +320,12 @@
 
     
 </script>
- 
+<script type="module">
+    import nav from '/navbar.js';
+
+    console.log(nav)
+    var div = document.getElementById("thatDiv");
+
+    div.innerHTML = nav();
+
+</script> 
