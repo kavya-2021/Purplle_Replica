@@ -74,9 +74,9 @@ app.get("/", function (req, res) {
 
 // // crud for the ejs control of facemakeup products
 
-// const faceController = require('./controllers/face.controller');
+const faceController = require('./controllers/face.controller');
 
-// app.use("/faceproducts",faceController);
+app.use("/faceproducts",faceController);
 
 // // crud for the ejs control of hairCare products
 

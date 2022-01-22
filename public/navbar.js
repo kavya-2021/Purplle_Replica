@@ -45,7 +45,7 @@ let nav = () =>
                                 </div>
                                 <div>
                                     <ul>
-                                        <li class="bb1"> <a href="/faceproducts">LIP MAKEUP</a></li>
+                                        <li class="bb1"> <a href="https://purplle--clone.herokuapp.com/faceproducts">LIP MAKEUP</a></li>
                                         <li> <a href="/faceproducts">Lipistick</a></li>
                                         <li> <a href="/faceproducts">Liquid Lipistick</a></li>
                                         <li> <a href="/faceproducts">Lip Crayon</a> </li>
