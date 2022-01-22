@@ -8,7 +8,7 @@ let nav = () =>
             <button id="Sbutton"><img src="https://cdn2.iconfinder.com/data/icons/social-messaging-productivity-black-2/1/16-512.png" alt=""></i></button>
           </div>
     
-        <a href="/"><img id="logoin" src="https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg" alt=""></a>
+        <a href="https://purplle--clone.herokuapp.com"><img id="logoin" src="https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg" alt=""></a>
        
         <div id="rdPart">
             <!-- <img id="details-enlarged-image" class="js-search-result-thumbnail custom-height container--focus" src="https://as2.ftcdn.net/v2/jpg/01/25/83/03/1000_F_125830316_m9Grtzjlt2I5Gp4qpDQq5G5BSXR5d9ZF.jpg" alt="Heart outline icon vector isolated" itemprop="thumbnail" data-content-id="125830316"> -->
@@ -84,20 +84,20 @@ let nav = () =>
                             <div id="Skincare">
                                 <div>
                                     <ul>
-                                        <li class="bb1"><a href="/skinproducts">CLEANSERS</a></li>
-                                        <li><a href="/skinproducts">Face Wash</a></li>
-                                        <li><a href="/skinproducts">SCRUBS & EXFOLIATORS</a></li>
-                                        <li><a href="/skinproducts">Makeups</a></li>
-                                        <li><a href="/skinproducts">Facial Wipes</a></li>
+                                        <li class="bb1"><a href="https://purplle--clone.herokuapp.com/skinproducts">CLEANSERS</a></li>
+                                        <li><a href="https://purplle--clone.herokuapp.com/skinproducts">Face Wash</a></li>
+                                        <li><a href="https://purplle--clone.herokuapp.com/skinproducts">SCRUBS & EXFOLIATORS</a></li>
+                                        <li><a href="https://purplle--clone.herokuapp.com/skinproducts">Makeups</a></li>
+                                        <li><a href="https://purplle--clone.herokuapp.com/skinproducts">Facial Wipes</a></li>
                                          
                                         <br>
                                         <br>
-                                        <li class="bb1"><a href="/skinproducts">TONER & FACE MISTS</a></li>
-                                        <li><a href="/skinproducts">Toner</a></li>
-                                        <li><a href="/skinproducts">Face Mists</a></li>
+                                        <li class="bb1"><a href="https://purplle--clone.herokuapp.com/skinproducts">TONER & FACE MISTS</a></li>
+                                        <li><a href="https://purplle--clone.herokuapp.com/skinproducts">Toner</a></li>
+                                        <li><a href="https://purplle--clone.herokuapp.com/skinproducts">Face Mists</a></li>
                                         <br>
                                         <br>
-                                        <li class="bb1"><a href="/skinproducts">MOISTURIZERS</a></li>
+                                        <li class="bb1"><a href="https://purplle--clone.herokuapp.com/skinproducts">MOISTURIZERS</a></li>
                                         <li><a href="">Face Moisturizers & Dry Cream</a></li>
                                         <li><a href="">Night Cream</a></li>
                                         <li><a href="">Serums & Essences</a></li>
@@ -151,19 +151,19 @@ let nav = () =>
                             <div id ="Haircare">
                                 <div>
                                     <ul>
-                                        <li class="bb1"><a href="/hairproducts">SHAMPOO & CONDITIONERS</a></li>
-                                        <li><a href="/hairproducts">Shampoo</a></li>
-                                        <li><a href="/hairproducts">Dry Shampoo</a></li>
-                                        <li><a href="/hairproducts">Conditioners</a></li>
+                                        <li class="bb1"><a href="https://purplle--clone.herokuapp.com/hairproducts">SHAMPOO & CONDITIONERS</a></li>
+                                        <li><a href="https://purplle--clone.herokuapp.com/hairproducts">Shampoo</a></li>
+                                        <li><a href="https://purplle--clone.herokuapp.com/hairproducts">Dry Shampoo</a></li>
+                                        <li><a href="https://purplle--clone.herokuapp.com/hairproducts">Conditioners</a></li>
                                         <br>
                                         <br>
-                                        <li class="bb1"><a href="/hairproducts">NORISHMENT</a></li>
+                                        <li class="bb1"><a href="https://purplle--clone.herokuapp.com/hairproducts">NORISHMENT</a></li>
                                         <li><a href="">Hair Oil</a></li>
                                         <li><a href="">Hair Spa & Mask</a></li>
                                         <li><a href="">Hair Serum</a></li>
                                         <br>
                                         <br>
-                                        <li class="bb1"><a href="/hairproducts">HAIR STYLING & TOOLS</a></li>
+                                        <li class="bb1"><a href="https://purplle--clone.herokuapp.com/hairproducts">HAIR STYLING & TOOLS</a></li>
                                         <li><a href="">Hair Colore</a></li>
                                         <li><a href="">Hair Spray</a></li>
                                         <li><a href="">Styling Cream, Gel & Waxes </a></li>
