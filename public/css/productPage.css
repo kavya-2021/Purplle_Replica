@@ -6,7 +6,7 @@
         text-align: left;
         margin: 0;
         /* letter-spacing: 2px; */
-    }
+    }     
     #slideShow1{
         width: 90%;
         margin: auto;
@@ -21,8 +21,8 @@
         margin-left: 37% ;
         margin-top: 15px ; 
         margin-bottom: 40px ;  
-    }
-
+    }  
+  
     a{
         text-decoration: none;
         color: black;
@@ -168,7 +168,7 @@
         font-size: 11px;
         font-weight: bold;
         font-family: 'Aqleema-Medium';
-    }
+    } 
 
     #priceOf{
         font-size: 16px;
@@ -186,7 +186,7 @@
 
     #Mdiv:hover #overlay {
     opacity: 1;
-    }
+    } 
 
     #toCartBtn1{
     font-size: 20px;

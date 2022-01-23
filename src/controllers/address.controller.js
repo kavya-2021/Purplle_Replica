@@ -5,7 +5,7 @@ const Address = require("../models/address.model");
 const router = express.Router();
 
 router.get("",async(req,res)=>{
-
+  
     try{
 
         const address = await Address.find().lean().exec();

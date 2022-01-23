@@ -7,7 +7,7 @@ const router = express.Router();
 router.get("",async(req,res)=>{
 
     try{
-
+   
         const payment = await Payment.find().lean().exec();
 
         return res.render("payment",{

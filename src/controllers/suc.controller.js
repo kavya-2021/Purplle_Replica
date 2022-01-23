@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.get("",async(req,res)=>{
 
-    try{
+    try{   
 
         const suc = await Suc.find().lean().exec();
 

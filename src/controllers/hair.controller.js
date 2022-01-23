@@ -9,7 +9,7 @@ const Product = require('../models/product.model');
 router.get("/",async(req,res)=>{
     try{
         const hair = await Hair.find().lean().exec();
-
+  
         return res.render("hairproducts",{
             hair : hair 
         });

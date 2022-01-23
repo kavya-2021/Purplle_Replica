@@ -7,7 +7,7 @@ const RequiredProd = require('../models/required.model')
 const router = express.Router();
 const Product = require('../models/product.model');
 router.get("/",async(req,res)=>{
-    try{
+    try{  
 
         const FaceMakeup = await Face.find().lean().exec();
         return res.render("faceproducts",{

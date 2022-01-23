@@ -1,6 +1,6 @@
 let nav = () => 
 {
-    return `  <div id="mainDiv">
+    return `  <div id="mainDiv">  
     <div id="logo">
     
         <div class="BorderLineSearch">

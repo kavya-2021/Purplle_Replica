@@ -9,7 +9,7 @@ const router = express.Router();
 const Product = require('../models/product.model');
 
 router.get("/",async(req,res)=>{
-    try{
+    try{  
 
         const cart = await Cart.find().lean().exec();
         return res.render("cart",{

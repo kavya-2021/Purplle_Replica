@@ -7,7 +7,7 @@ const RequiredProd = require('../models/required.model')
 const router = express.Router();
 const Product = require('../models/product.model');
 router.get("/",async(req,res)=>{
-    try{
+    try{    
 
         const wish = await Wish.find().lean().exec();
         return res.render("wishlist",{
@@ -17,7 +17,7 @@ router.get("/",async(req,res)=>{
     }catch(err){
         return res.status(500).send({ error: err.message});
     }
-});
+});  
 
 router.post("/",async(req,res)=>{
     try{
@@ -29,7 +29,7 @@ router.post("/",async(req,res)=>{
     }catch(err){
         return res.status(500).send({error: err.message});
     }
-});
+});  
 
 router.get("/:id",async(req,res)=>{
     try{
@@ -39,7 +39,7 @@ router.get("/:id",async(req,res)=>{
         const wish = await Wish.findById(req.params.id).lean().exec();
         const allProducts=await Product.find().lean().exec();
         const Reqwish = await RequiredProd.create(wish);
-        
+            
           
         return res.render("productDescription",{
             required : Reqwish,
@@ -52,7 +52,7 @@ router.get("/:id",async(req,res)=>{
 });
 
 router.delete("/:id",async(req,res)=>{
-    try{
+    try{   
 
        const wishDel = await Wish.findByIdAndDelete(req.params.id).lean().exec();
        const wish = await Wish.find().lean().exec();
@@ -66,3 +66,8 @@ router.delete("/:id",async(req,res)=>{
 });
 
 module.exports = router;
+  
+  
+  
+  
+  
