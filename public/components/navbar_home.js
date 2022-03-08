@@ -8,11 +8,11 @@ let nav = () =>
             <button id="Sbutton"><img src="https://cdn2.iconfinder.com/data/icons/social-messaging-productivity-black-2/1/16-512.png" alt=""></i></button>
           </div>
     
-        <a href="home.html"><img id="logoin" src="https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg" alt=""></a>
+        <a href="/"><img id="logoin" src="https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg" alt=""></a>
        
         <div id="rdPart">
             <!-- <img id="details-enlarged-image" class="js-search-result-thumbnail custom-height container--focus" src="https://as2.ftcdn.net/v2/jpg/01/25/83/03/1000_F_125830316_m9Grtzjlt2I5Gp4qpDQq5G5BSXR5d9ZF.jpg" alt="Heart outline icon vector isolated" itemprop="thumbnail" data-content-id="125830316"> -->
-            <a href="WishList.html"><i class="far fa-heart"></i></a>
+            <a href="/wishist"><i class="far fa-heart"></i></a>
             <a href="/users/login"><i class="far fa-smile"></i></a>
             <a href="/cart"><i class="fas fa-shopping-bag"></i></a>
             <!-- <img src="https://cdn0.iconfinder.com/data/icons/buntu-internet/100/shopping_cart_glyph_convert-512.png" alt=""> -->
@@ -29,11 +29,11 @@ let nav = () =>
                             <div id = "Makeup">
                                 <div>
                                     <ul>
-                                        <li class="bb1"><a href="FaceMakeup.html">MakeUP</a></li>
-                                        <li> <a href="FaceMakeup.html"> Primer</a></li>
-                                        <li> <a href="FaceMakeup.html">COncealer</a></li>
-                                        <li> <a href="FaceMakeup.html">BB & CC Cream</a></li>
-                                        <li> <a href="FaceMakeup.html">Foundation</a></li>
+                                        <li class="bb1"><a href="/faceproducts">MakeUP</a></li>
+                                        <li> <a href="/faceproducts"> Primer</a></li>
+                                        <li> <a href="/faceproducts">COncealer</a></li>
+                                        <li> <a href="/faceproducts">BB & CC Cream</a></li>
+                                        <li> <a href="/faceproducts">Foundation</a></li>
                                         <li> <a href="">Compect</a> </li>
                                         <li> <a href="">Loos Powder</a> </li>
                                         <li> <a href="">Blush</a> </li>
@@ -45,15 +45,15 @@ let nav = () =>
                                 </div>
                                 <div>
                                     <ul>
-                                        <li class="bb1"> <a href="FaceMakeup.html">LIP MAKEUP</a></li>
-                                        <li> <a href="FaceMakeup.html">Lipistick</a></li>
-                                        <li> <a href="FaceMakeup.html">Liquid Lipistick</a></li>
-                                        <li> <a href="FaceMakeup.html">Lip Crayon</a> </li>
-                                        <li> <a href="FaceMakeup.html">Lip Liner</a></li>
+                                        <li class="bb1"> <a href="/faceproducts">LIP MAKEUP</a></li>
+                                        <li> <a href="/faceproducts">Lipistick</a></li>
+                                        <li> <a href="/faceproducts">Liquid Lipistick</a></li>
+                                        <li> <a href="/faceproducts">Lip Crayon</a> </li>
+                                        <li> <a href="/faceproducts">Lip Liner</a></li>
                                         <li> <a href="">Gloss</a> </li>
                                         <br>
                                         <br>
-                                         <li class="bb1"><a href="FaceMakeup.html">NAILS</a></li>
+                                         <li class="bb1"><a href="/faceproducts">NAILS</a></li>
                                          <li><a href="">nail Polish</a></li>
                                          <li><a href="">Gel Nail Polish</a></li>
                                          <li><a href="">Matte Nail Polish</a></li>
@@ -84,20 +84,20 @@ let nav = () =>
                             <div id="Skincare">
                                 <div>
                                     <ul>
-                                        <li class="bb1"><a href="SkinCare.html">CLEANSERS</a></li>
-                                        <li><a href="SkinCare.html">Face Wash</a></li>
-                                        <li><a href="SkinCare.html">SCRUBS & EXFOLIATORS</a></li>
-                                        <li><a href="SkinCare.html">Makeups</a></li>
-                                        <li><a href="SkinCare.html">Facial Wipes</a></li>
+                                        <li class="bb1"><a href="/skinproducts">CLEANSERS</a></li>
+                                        <li><a href="/skinproducts">Face Wash</a></li>
+                                        <li><a href="/skinproducts">SCRUBS & EXFOLIATORS</a></li>
+                                        <li><a href="/skinproducts">Makeups</a></li>
+                                        <li><a href="/skinproducts">Facial Wipes</a></li>
                                          
                                         <br>
                                         <br>
-                                        <li class="bb1"><a href="SkinCare.html">TONER & FACE MISTS</a></li>
-                                        <li><a href="SkinCare.html">Toner</a></li>
-                                        <li><a href="SkinCare.html">Face Mists</a></li>
+                                        <li class="bb1"><a href="/skinproducts">TONER & FACE MISTS</a></li>
+                                        <li><a href="/skinproducts">Toner</a></li>
+                                        <li><a href="/skinproducts">Face Mists</a></li>
                                         <br>
                                         <br>
-                                        <li class="bb1"><a href="SkinCare.html">MOISTURIZERS</a></li>
+                                        <li class="bb1"><a href="/skinproducts">MOISTURIZERS</a></li>
                                         <li><a href="">Face Moisturizers & Dry Cream</a></li>
                                         <li><a href="">Night Cream</a></li>
                                         <li><a href="">Serums & Essences</a></li>
@@ -151,19 +151,19 @@ let nav = () =>
                             <div id ="Haircare">
                                 <div>
                                     <ul>
-                                        <li class="bb1"><a href="HairCare.html">SHAMPOO & CONDITIONERS</a></li>
-                                        <li><a href="HairCare.html">Shampoo</a></li>
-                                        <li><a href="HairCare.html">Dry Shampoo</a></li>
-                                        <li><a href="HairCare.html">Conditioners</a></li>
+                                        <li class="bb1"><a href="/hairproducts">SHAMPOO & CONDITIONERS</a></li>
+                                        <li><a href="/hairproducts">Shampoo</a></li>
+                                        <li><a href="/hairproducts">Dry Shampoo</a></li>
+                                        <li><a href="/hairproducts">Conditioners</a></li>
                                         <br>
                                         <br>
-                                        <li class="bb1"><a href="HairCare.html">NORISHMENT</a></li>
+                                        <li class="bb1"><a href="/hairproducts">NORISHMENT</a></li>
                                         <li><a href="">Hair Oil</a></li>
                                         <li><a href="">Hair Spa & Mask</a></li>
                                         <li><a href="">Hair Serum</a></li>
                                         <br>
                                         <br>
-                                        <li class="bb1"><a href="HairCare.html">HAIR STYLING & TOOLS</a></li>
+                                        <li class="bb1"><a href="/hairproducts">HAIR STYLING & TOOLS</a></li>
                                         <li><a href="">Hair Colore</a></li>
                                         <li><a href="">Hair Spray</a></li>
                                         <li><a href="">Styling Cream, Gel & Waxes </a></li>
